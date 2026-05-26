@@ -1,0 +1,171 @@
+{
+  "ecu_profile": "Gateway_ECU_Sim",
+  "uds_settings": {
+    "p2_timeout_ms": 50,
+    "p2_star_timeout_ms": 2000,
+    "tester_present_timeout_s": 5
+  },
+  "vulnerabilities": [
+    {
+      "id": "DLOCK-001",
+      "name": "VIN_Write_Overflow",
+      "description": "Writing to VIN DID 0xF190 with payload > 17 bytes causes buffer overflow in the door lock controller NVM write buffer",
+      "trigger": {
+        "sid": "0x2E",
+        "did": "0xF190",
+        "condition": "payload_length > 17"
+      },
+      "effect": {
+        "action": "CRASH",
+        "behavior": "STOP_RESPONDING",
+        "log_message": "NVM write buffer overflow on VIN DID 0xF190 — door lock controller unresponsive"
+      },
+      "enabled": true
+    },
+    {
+      "id": "DLOCK-002",
+      "name": "Security_Bypass_Magic_Byte",
+      "description": "WriteDID to any door DID (0xF601–0xF604) with first data byte 0xAA bypasses SecurityAccess check entirely — doors can be unlocked without authentication",
+      "trigger": {
+        "sid": "0x2E",
+        "did_range": ["0xF601", "0xF602", "0xF603", "0xF604"],
+        "required_byte_index": 0,
+        "required_byte_value": "0xAA"
+      },
+      "effect": {
+        "action": "BYPASS_SECURITY",
+        "behavior": "POSITIVE_RESPONSE",
+        "log_message": "Magic byte 0xAA on door WriteDID — SecurityAccess bypassed, physical lock override possible"
+      },
+      "enabled": true
+    },
+    {
+      "id": "DLOCK-003",
+      "name": "ISO_TP_Segment_Overlap",
+      "description": "Sending overlapping multi-frame ISO-TP consecutive frames (SN wrap at 0x0F→0x00) to CAN ID 0x19B causes reassembly buffer corruption in the door lock gateway module",
+      "trigger": {
+        "sid": "0x2E",
+        "condition": "isotp_sn_wrap"
+      },
+      "effect": {
+        "action": "CRASH",
+        "behavior": "STOP_RESPONDING",
+        "log_message": "ISO-TP sequence number wrap caused reassembly buffer corruption on 0x19B — ECU reset required"
+      },
+      "enabled": true
+    },
+    {
+      "id": "DLOCK-004",
+      "name": "Programming_Session_Without_Extended",
+      "description": "Programming session (0x02) accepted without prior Extended session (0x03) — illegal state transition allows unauthorized firmware flashing of the door lock module",
+      "trigger": {
+        "sid": "0x10",
+        "sub_function": "0x02",
+        "previous_session_not": "0x03"
+      },
+      "effect": {
+        "action": "LOGIC_ERR",
+        "behavior": "ACCEPT_ILLEGAL_TRANSITION",
+        "log_message": "Unauthorized Programming Session transition on DLOCK — firmware flash vector exposed"
+      },
+      "enabled": true
+    },
+    {
+      "id": "DLOCK-005",
+      "name": "Diagnostic_Session_Leaking",
+      "description": "ECU responds to ReadDID 0xF60A (fault code) and 0xF609 (command count) in Default session without requiring Extended session — internal lock state exposed to unauthenticated tester",
+      "trigger": {
+        "sid": "0x22",
+        "did_range": ["0xF60A", "0xF609"]
+      },
+      "effect": {
+        "action": "LOGIC_ERR",
+        "behavior": "POSITIVE_RESPONSE",
+        "log_message": "Sensitive DIDs 0xF60A/0xF609 readable in Default session — lock state and fault history exposed"
+      },
+      "enabled": true
+    },
+    {
+      "id": "DLOCK-006",
+      "name": "Weak_Seed_Entropy",
+      "description": "SecurityAccess (0x27 subfunction 0x01) always returns a static seed 0xBEEF regardless of session or timestamp — brute-force attack completes in under 65536 attempts",
+      "trigger": {
+        "sid": "0x27",
+        "sub_function": "0x01"
+      },
+      "effect": {
+        "action": "MODIFY_RESPONSE",
+        "mode": "STATIC_SEED",
+        "values": ["0xBE", "0xEF"],
+        "entropy_flaw_type": "constant",
+        "log_message": "Predictable seed 0xBEEF issued — SecurityAccess brute-force possible in O(65536)"
+      },
+      "enabled": true
+    },
+    {
+      "id": "DLOCK-007",
+      "name": "Door_Unlock_Without_Auth",
+      "description": "WriteDID to any door DID (0xF601–0xF604) accepted in Default session without SecurityAccess — all four doors can be remotely unlocked by any unauthenticated CAN node",
+      "trigger": {
+        "sid": "0x2E",
+        "did_range": ["0xF601", "0xF602", "0xF603", "0xF604"],
+        "required_session": "0x01"
+      },
+      "effect": {
+        "action": "BYPASS_WRITE_DID",
+        "behavior": "POSITIVE_RESPONSE",
+        "log_message": "Door unlock WriteDID accepted in Default session — no SecurityAccess required, vehicle entry bypass possible"
+      },
+      "enabled": true
+    },
+    {
+      "id": "DLOCK-008",
+      "name": "Child_Lock_Disable_No_Auth",
+      "description": "WriteDID to child lock DIDs 0xF606/0xF607 accepted without any session or security check — child safety locks can be disabled remotely",
+      "trigger": {
+        "sid": "0x2E",
+        "did_range": ["0xF606", "0xF607"]
+      },
+      "effect": {
+        "action": "BYPASS_WRITE_DID",
+        "behavior": "POSITIVE_RESPONSE",
+        "log_message": "Child lock 0xF606/0xF607 written without auth — rear door safety bypass possible"
+      },
+      "enabled": false
+    },
+    {
+      "id": "DLOCK-009",
+      "name": "Trunk_Release_Without_Auth",
+      "description": "WriteDID to trunk DID 0xF605 with value 0x01 accepted in Default session — trunk can be opened remotely without any authentication from any CAN node on the bus",
+      "trigger": {
+        "sid": "0x2E",
+        "did": "0xF605",
+        "required_session": "0x01"
+      },
+      "effect": {
+        "action": "BYPASS_WRITE_DID",
+        "behavior": "POSITIVE_RESPONSE",
+        "log_message": "Trunk release DID 0xF605 accepted without auth — cargo access bypass possible"
+      },
+      "enabled": true
+    },
+    {
+      "id": "DLOCK-010",
+      "name": "Rapid_Lock_Unlock_DoS",
+      "description": "Rapid alternating WriteDID lock (0x00) / unlock (0x01) to door DIDs at >50 Hz causes the actuator driver IC to enter overcurrent fault mode and stop responding",
+      "trigger": {
+        "sid": "0x2E",
+        "did_range": ["0xF601", "0xF602", "0xF603", "0xF604"],
+        "frequency_hz_gt": 50,
+        "duration_seconds": 2
+      },
+      "effect": {
+        "action": "HANG",
+        "duration_ms": 5000,
+        "behavior": "FORCE_P2_STAR_TIMEOUT",
+        "log_message": "Door actuator driver overcurrent fault — lock/unlock motor disabled for 5 seconds"
+      },
+      "enabled": false
+    }
+  ]
+}

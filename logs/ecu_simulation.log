@@ -1,0 +1,493 @@
+[2026-05-25 13:01:19.281] [INF] [ecu                         ] [logger.py:_bootstrap:133] ========================================================================
+  ECU Simulation logging started  —  2026-05-25 13:01:19
+========================================================================
+[2026-05-25 13:01:19.352] [INF] [ecu.main_speedo             ] [main_speedo.py:<module>:32] [SYSTEM] Speedometer ECU Simulator starting
+[2026-05-25 13:01:19.555] [INF] [ecu.speedo_ecu              ] [speedo_ecu.py:__init__:78] [SYSTEM] SpeedoECU initialised
+[2026-05-25 13:01:19.555] [INF] [ecu.vulnerability_engine    ] [vulnerability_engine.py:__init__:26] [INIT] VulnerabilityEngine ready — 5 of 6 vulnerabilities enabled
+[2026-05-25 13:01:19.555] [DBG] [ecu.vulnerability_engine    ] [vulnerability_engine.py:__init__:31] [INIT]   ENABLED: SPEEDO-001 — Speed_Write_Overflow
+[2026-05-25 13:01:19.555] [DBG] [ecu.vulnerability_engine    ] [vulnerability_engine.py:__init__:31] [INIT]   ENABLED: SPEEDO-002 — Odometer_Magic_Byte_Bypass
+[2026-05-25 13:01:19.555] [DBG] [ecu.vulnerability_engine    ] [vulnerability_engine.py:__init__:31] [INIT]   ENABLED: SPEEDO-004 — Programming_Session_Without_Extended
+[2026-05-25 13:01:19.555] [DBG] [ecu.vulnerability_engine    ] [vulnerability_engine.py:__init__:31] [INIT]   ENABLED: SPEEDO-005 — Weak_Seed_Constant_Entropy
+[2026-05-25 13:01:19.555] [DBG] [ecu.vulnerability_engine    ] [vulnerability_engine.py:__init__:31] [INIT]   ENABLED: SPEEDO-006 — Fuel_Level_Spoofing
+[2026-05-25 13:01:19.556] [INF] [ecu.main_speedo             ] [main_speedo.py:<module>:38] [SYSTEM] Entering Tk main loop
+[2026-05-25 13:01:19.658] [INF] [ecu.speedo_ecu              ] [speedo_ecu.py:start:87] [SYSTEM] Speedometer ECU started
+[2026-05-25 13:01:59.854] [INF] [ecu.main_speedo             ] [main_speedo.py:<module>:43] [SYSTEM] Speedometer ECU Simulator exited
+[2026-05-25 13:02:15.732] [INF] [ecu                         ] [logger.py:_bootstrap:133] ========================================================================
+  ECU Simulation logging started  —  2026-05-25 13:02:15
+========================================================================
+[2026-05-25 13:02:15.788] [INF] [ecu.main                    ] [main.py:<module>:33] [SYSTEM] Speedometer ECU Simulator starting
+[2026-05-25 13:02:15.963] [INF] [ecu.speedo_ecu              ] [speedo_ecu.py:__init__:78] [SYSTEM] SpeedoECU initialised
+[2026-05-25 13:02:15.963] [INF] [ecu.vulnerability_engine    ] [vulnerability_engine.py:__init__:26] [INIT] VulnerabilityEngine ready — 5 of 6 vulnerabilities enabled
+[2026-05-25 13:02:15.963] [DBG] [ecu.vulnerability_engine    ] [vulnerability_engine.py:__init__:31] [INIT]   ENABLED: SPEEDO-001 — Speed_Write_Overflow
+[2026-05-25 13:02:15.963] [DBG] [ecu.vulnerability_engine    ] [vulnerability_engine.py:__init__:31] [INIT]   ENABLED: SPEEDO-002 — Odometer_Magic_Byte_Bypass
+[2026-05-25 13:02:15.963] [DBG] [ecu.vulnerability_engine    ] [vulnerability_engine.py:__init__:31] [INIT]   ENABLED: SPEEDO-004 — Programming_Session_Without_Extended
+[2026-05-25 13:02:15.963] [DBG] [ecu.vulnerability_engine    ] [vulnerability_engine.py:__init__:31] [INIT]   ENABLED: SPEEDO-005 — Weak_Seed_Constant_Entropy
+[2026-05-25 13:02:15.963] [DBG] [ecu.vulnerability_engine    ] [vulnerability_engine.py:__init__:31] [INIT]   ENABLED: SPEEDO-006 — Fuel_Level_Spoofing
+[2026-05-25 13:02:15.964] [INF] [ecu.main                    ] [main.py:<module>:39] [SYSTEM] Entering Tk main loop
+[2026-05-25 13:02:16.104] [INF] [ecu.speedo_ecu              ] [speedo_ecu.py:start:87] [SYSTEM] Speedometer ECU started
+[2026-05-25 13:02:18.848] [INF] [ecu.main                    ] [main.py:<module>:44] [SYSTEM] Speedometer ECU Simulator exited
+[2026-05-25 13:03:52.972] [INF] [ecu                         ] [logger.py:_bootstrap:133] ========================================================================
+  ECU Simulation logging started  —  2026-05-25 13:03:52
+========================================================================
+[2026-05-25 13:04:21.043] [INF] [ecu                         ] [logger.py:_bootstrap:133] ========================================================================
+  ECU Simulation logging started  —  2026-05-25 13:04:21
+========================================================================
+[2026-05-25 13:04:21.098] [INF] [ecu.main                    ] [main.py:<module>:33] [SYSTEM] Speedometer ECU Simulator starting
+[2026-05-25 13:04:21.264] [INF] [ecu.speedo_ecu              ] [speedo_ecu.py:__init__:78] [SYSTEM] SpeedoECU initialised
+[2026-05-25 13:04:21.265] [INF] [ecu.vulnerability_engine    ] [vulnerability_engine.py:__init__:26] [INIT] VulnerabilityEngine ready — 5 of 6 vulnerabilities enabled
+[2026-05-25 13:04:21.265] [DBG] [ecu.vulnerability_engine    ] [vulnerability_engine.py:__init__:31] [INIT]   ENABLED: SPEEDO-001 — Speed_Write_Overflow
+[2026-05-25 13:04:21.265] [DBG] [ecu.vulnerability_engine    ] [vulnerability_engine.py:__init__:31] [INIT]   ENABLED: SPEEDO-002 — Odometer_Magic_Byte_Bypass
+[2026-05-25 13:04:21.265] [DBG] [ecu.vulnerability_engine    ] [vulnerability_engine.py:__init__:31] [INIT]   ENABLED: SPEEDO-004 — Programming_Session_Without_Extended
+[2026-05-25 13:04:21.265] [DBG] [ecu.vulnerability_engine    ] [vulnerability_engine.py:__init__:31] [INIT]   ENABLED: SPEEDO-005 — Weak_Seed_Constant_Entropy
+[2026-05-25 13:04:21.265] [DBG] [ecu.vulnerability_engine    ] [vulnerability_engine.py:__init__:31] [INIT]   ENABLED: SPEEDO-006 — Fuel_Level_Spoofing
+[2026-05-25 13:04:21.266] [INF] [ecu.main                    ] [main.py:<module>:39] [SYSTEM] Entering Tk main loop
+[2026-05-25 13:04:21.373] [INF] [ecu.speedo_ecu              ] [speedo_ecu.py:start:87] [SYSTEM] Speedometer ECU started
+[2026-05-25 13:05:13.459] [INF] [ecu.main                    ] [main.py:<module>:44] [SYSTEM] Speedometer ECU Simulator exited
+[2026-05-26 12:16:18.660] [INF] [ecu                         ] [logger.py:_bootstrap:133] ========================================================================
+  ECU Simulation logging started  —  2026-05-26 12:16:18
+========================================================================
+[2026-05-26 12:18:14.760] [INF] [ecu.vulnerability_engine    ] [vulnerability_engine.py:__init__:26] [INIT] VulnerabilityEngine ready — 5 of 6 vulnerabilities enabled
+[2026-05-26 12:18:14.761] [DBG] [ecu.vulnerability_engine    ] [vulnerability_engine.py:__init__:31] [INIT]   ENABLED: SPEEDO-001 — Speed_Write_Overflow
+[2026-05-26 12:18:14.761] [DBG] [ecu.vulnerability_engine    ] [vulnerability_engine.py:__init__:31] [INIT]   ENABLED: SPEEDO-002 — Odometer_Magic_Byte_Bypass
+[2026-05-26 12:18:14.761] [DBG] [ecu.vulnerability_engine    ] [vulnerability_engine.py:__init__:31] [INIT]   ENABLED: SPEEDO-004 — Programming_Session_Without_Extended
+[2026-05-26 12:18:14.761] [DBG] [ecu.vulnerability_engine    ] [vulnerability_engine.py:__init__:31] [INIT]   ENABLED: SPEEDO-005 — Weak_Seed_Constant_Entropy
+[2026-05-26 12:18:14.761] [DBG] [ecu.vulnerability_engine    ] [vulnerability_engine.py:__init__:31] [INIT]   ENABLED: SPEEDO-006 — Fuel_Level_Spoofing
+[2026-05-26 12:18:25.796] [INF] [ecu                         ] [logger.py:_bootstrap:133] ========================================================================
+  ECU Simulation logging started  —  2026-05-26 12:18:25
+========================================================================
+[2026-05-26 12:18:57.334] [INF] [ecu.vulnerability_engine    ] [vulnerability_engine.py:__init__:26] [INIT] VulnerabilityEngine ready — 5 of 6 vulnerabilities enabled
+[2026-05-26 12:18:57.334] [DBG] [ecu.vulnerability_engine    ] [vulnerability_engine.py:__init__:31] [INIT]   ENABLED: VULN-001 — VIN_Write_Overflow
+[2026-05-26 12:18:57.334] [DBG] [ecu.vulnerability_engine    ] [vulnerability_engine.py:__init__:31] [INIT]   ENABLED: VULN-002 — Security_Bypass_Magic_Byte
+[2026-05-26 12:18:57.334] [DBG] [ecu.vulnerability_engine    ] [vulnerability_engine.py:__init__:31] [INIT]   ENABLED: VULN-004 — ISO_TP_Segment_Overlap
+[2026-05-26 12:18:57.335] [DBG] [ecu.vulnerability_engine    ] [vulnerability_engine.py:__init__:31] [INIT]   ENABLED: VULN-005 — Diagnostic_Session_Leaking
+[2026-05-26 12:18:57.335] [DBG] [ecu.vulnerability_engine    ] [vulnerability_engine.py:__init__:31] [INIT]   ENABLED: VULN-006 — Weak_Seed_Entropy
+[2026-05-26 12:23:09.299] [INF] [ecu                         ] [logger.py:_bootstrap:133] ========================================================================
+  ECU Simulation logging started  —  2026-05-26 12:23:09
+========================================================================
+[2026-05-26 12:23:20.116] [INF] [ecu.vulnerability_engine    ] [vulnerability_engine.py:__init__:26] [INIT] VulnerabilityEngine ready — 5 of 6 vulnerabilities enabled
+[2026-05-26 12:23:20.117] [DBG] [ecu.vulnerability_engine    ] [vulnerability_engine.py:__init__:31] [INIT]   ENABLED: VULN-001 — VIN_Write_Overflow
+[2026-05-26 12:23:20.117] [DBG] [ecu.vulnerability_engine    ] [vulnerability_engine.py:__init__:31] [INIT]   ENABLED: VULN-002 — Security_Bypass_Magic_Byte
+[2026-05-26 12:23:20.117] [DBG] [ecu.vulnerability_engine    ] [vulnerability_engine.py:__init__:31] [INIT]   ENABLED: VULN-004 — ISO_TP_Segment_Overlap
+[2026-05-26 12:23:20.117] [DBG] [ecu.vulnerability_engine    ] [vulnerability_engine.py:__init__:31] [INIT]   ENABLED: VULN-005 — Diagnostic_Session_Leaking
+[2026-05-26 12:23:20.117] [DBG] [ecu.vulnerability_engine    ] [vulnerability_engine.py:__init__:31] [INIT]   ENABLED: VULN-006 — Weak_Seed_Entropy
+[2026-05-26 12:24:56.902] [INF] [ecu.vulnerability_engine    ] [vulnerability_engine.py:__init__:26] [INIT] VulnerabilityEngine ready — 5 of 6 vulnerabilities enabled
+[2026-05-26 12:24:56.902] [DBG] [ecu.vulnerability_engine    ] [vulnerability_engine.py:__init__:31] [INIT]   ENABLED: SPEEDO-001 — Speed_Write_Overflow
+[2026-05-26 12:24:56.902] [DBG] [ecu.vulnerability_engine    ] [vulnerability_engine.py:__init__:31] [INIT]   ENABLED: SPEEDO-002 — Odometer_Magic_Byte_Bypass
+[2026-05-26 12:24:56.903] [DBG] [ecu.vulnerability_engine    ] [vulnerability_engine.py:__init__:31] [INIT]   ENABLED: SPEEDO-004 — Programming_Session_Without_Extended
+[2026-05-26 12:24:56.903] [DBG] [ecu.vulnerability_engine    ] [vulnerability_engine.py:__init__:31] [INIT]   ENABLED: SPEEDO-005 — Weak_Seed_Constant_Entropy
+[2026-05-26 12:24:56.903] [DBG] [ecu.vulnerability_engine    ] [vulnerability_engine.py:__init__:31] [INIT]   ENABLED: SPEEDO-006 — Fuel_Level_Spoofing
+[2026-05-26 12:28:45.435] [INF] [ecu                         ] [logger.py:_bootstrap:133] ========================================================================
+  ECU Simulation logging started  —  2026-05-26 12:28:45
+========================================================================
+[2026-05-26 12:28:45.599] [INF] [ecu.vulnerability_engine    ] [vulnerability_engine.py:__init__:26] [INIT] VulnerabilityEngine ready — 8 of 10 vulnerabilities enabled
+[2026-05-26 12:28:45.600] [DBG] [ecu.vulnerability_engine    ] [vulnerability_engine.py:__init__:31] [INIT]   ENABLED: DLOCK-001 — VIN_Write_Overflow
+[2026-05-26 12:28:45.600] [DBG] [ecu.vulnerability_engine    ] [vulnerability_engine.py:__init__:31] [INIT]   ENABLED: DLOCK-002 — Security_Bypass_Magic_Byte
+[2026-05-26 12:28:45.600] [DBG] [ecu.vulnerability_engine    ] [vulnerability_engine.py:__init__:31] [INIT]   ENABLED: DLOCK-003 — ISO_TP_Segment_Overlap
+[2026-05-26 12:28:45.600] [DBG] [ecu.vulnerability_engine    ] [vulnerability_engine.py:__init__:31] [INIT]   ENABLED: DLOCK-004 — Programming_Session_Without_Extended
+[2026-05-26 12:28:45.600] [DBG] [ecu.vulnerability_engine    ] [vulnerability_engine.py:__init__:31] [INIT]   ENABLED: DLOCK-005 — Diagnostic_Session_Leaking
+[2026-05-26 12:28:45.600] [DBG] [ecu.vulnerability_engine    ] [vulnerability_engine.py:__init__:31] [INIT]   ENABLED: DLOCK-006 — Weak_Seed_Entropy
+[2026-05-26 12:28:45.600] [DBG] [ecu.vulnerability_engine    ] [vulnerability_engine.py:__init__:31] [INIT]   ENABLED: DLOCK-007 — Door_Unlock_Without_Auth
+[2026-05-26 12:28:45.600] [DBG] [ecu.vulnerability_engine    ] [vulnerability_engine.py:__init__:31] [INIT]   ENABLED: DLOCK-009 — Trunk_Release_Without_Auth
+[2026-05-26 12:28:45.710] [INF] [ecu.isotp_server            ] [isotp_server.py:__init__:16] [INIT] ISO-TP server starting — interface=vcan0 RX=0x19B TX=0x19C
+[2026-05-26 12:28:45.713] [INF] [ecu.isotp_server            ] [isotp_server.py:__init__:32] [INIT] ISO-TP stack ready — stmin=5ms blocksize=8 wftmax=2
+[2026-05-26 12:28:53.632] [INF] [ecu.vulnerability_engine    ] [vulnerability_engine.py:__init__:26] [INIT] VulnerabilityEngine ready — 8 of 10 vulnerabilities enabled
+[2026-05-26 12:28:53.633] [DBG] [ecu.vulnerability_engine    ] [vulnerability_engine.py:__init__:31] [INIT]   ENABLED: DLOCK-001 — VIN_Write_Overflow
+[2026-05-26 12:28:53.633] [DBG] [ecu.vulnerability_engine    ] [vulnerability_engine.py:__init__:31] [INIT]   ENABLED: DLOCK-002 — Security_Bypass_Magic_Byte
+[2026-05-26 12:28:53.633] [DBG] [ecu.vulnerability_engine    ] [vulnerability_engine.py:__init__:31] [INIT]   ENABLED: DLOCK-003 — ISO_TP_Segment_Overlap
+[2026-05-26 12:28:53.633] [DBG] [ecu.vulnerability_engine    ] [vulnerability_engine.py:__init__:31] [INIT]   ENABLED: DLOCK-004 — Programming_Session_Without_Extended
+[2026-05-26 12:28:53.633] [DBG] [ecu.vulnerability_engine    ] [vulnerability_engine.py:__init__:31] [INIT]   ENABLED: DLOCK-005 — Diagnostic_Session_Leaking
+[2026-05-26 12:28:53.633] [DBG] [ecu.vulnerability_engine    ] [vulnerability_engine.py:__init__:31] [INIT]   ENABLED: DLOCK-006 — Weak_Seed_Entropy
+[2026-05-26 12:28:53.633] [DBG] [ecu.vulnerability_engine    ] [vulnerability_engine.py:__init__:31] [INIT]   ENABLED: DLOCK-007 — Door_Unlock_Without_Auth
+[2026-05-26 12:28:53.633] [DBG] [ecu.vulnerability_engine    ] [vulnerability_engine.py:__init__:31] [INIT]   ENABLED: DLOCK-009 — Trunk_Release_Without_Auth
+[2026-05-26 12:33:26.518] [DBG] [ecu.isotp_server            ] [isotp_server.py:recv:62] [RECV] ISO-TP frame — len=3 hex=C78910
+[2026-05-26 12:33:26.519] [DBG] [ecu.isotp_server            ] [isotp_server.py:send:76] [SEND] ISO-TP frame — len=3 hex=7FC711
+[2026-05-26 12:33:40.527] [DBG] [ecu.isotp_server            ] [isotp_server.py:recv:62] [RECV] ISO-TP frame — len=1 hex=53
+[2026-05-26 12:33:40.528] [DBG] [ecu.isotp_server            ] [isotp_server.py:send:76] [SEND] ISO-TP frame — len=3 hex=7F5311
+[2026-05-26 12:34:29.589] [DBG] [ecu.isotp_server            ] [isotp_server.py:recv:62] [RECV] ISO-TP frame — len=2 hex=1001
+[2026-05-26 12:34:29.590] [DBG] [ecu.isotp_server            ] [isotp_server.py:send:76] [SEND] ISO-TP frame — len=6 hex=5001003201F4
+[2026-05-26 12:34:29.594] [DBG] [ecu.isotp_server            ] [isotp_server.py:recv:62] [RECV] ISO-TP frame — len=2 hex=1001
+[2026-05-26 12:34:29.594] [DBG] [ecu.isotp_server            ] [isotp_server.py:send:76] [SEND] ISO-TP frame — len=6 hex=5001003201F4
+[2026-05-26 12:35:12.325] [DBG] [ecu.isotp_server            ] [isotp_server.py:recv:62] [RECV] ISO-TP frame — len=2 hex=1003
+[2026-05-26 12:35:12.327] [DBG] [ecu.isotp_server            ] [isotp_server.py:send:76] [SEND] ISO-TP frame — len=6 hex=5003003201F4
+[2026-05-26 12:35:12.331] [DBG] [ecu.isotp_server            ] [isotp_server.py:recv:62] [RECV] ISO-TP frame — len=2 hex=2701
+[2026-05-26 12:35:12.337] [DBG] [ecu.isotp_server            ] [isotp_server.py:send:76] [SEND] ISO-TP frame — len=4 hex=6701BEEF
+[2026-05-26 12:35:12.341] [DBG] [ecu.isotp_server            ] [isotp_server.py:recv:62] [RECV] ISO-TP frame — len=2 hex=1101
+[2026-05-26 12:35:12.342] [DBG] [ecu.isotp_server            ] [isotp_server.py:send:76] [SEND] ISO-TP frame — len=2 hex=5101
+[2026-05-26 12:35:12.847] [DBG] [ecu.isotp_server            ] [isotp_server.py:recv:62] [RECV] ISO-TP frame — len=2 hex=1003
+[2026-05-26 12:35:12.849] [DBG] [ecu.isotp_server            ] [isotp_server.py:send:76] [SEND] ISO-TP frame — len=6 hex=5003003201F4
+[2026-05-26 12:35:12.854] [DBG] [ecu.isotp_server            ] [isotp_server.py:recv:62] [RECV] ISO-TP frame — len=2 hex=2701
+[2026-05-26 12:35:12.856] [DBG] [ecu.isotp_server            ] [isotp_server.py:send:76] [SEND] ISO-TP frame — len=4 hex=6701BEEF
+[2026-05-26 12:35:12.861] [DBG] [ecu.isotp_server            ] [isotp_server.py:recv:62] [RECV] ISO-TP frame — len=2 hex=1101
+[2026-05-26 12:35:12.862] [DBG] [ecu.isotp_server            ] [isotp_server.py:send:76] [SEND] ISO-TP frame — len=2 hex=5101
+[2026-05-26 12:35:13.366] [DBG] [ecu.isotp_server            ] [isotp_server.py:recv:62] [RECV] ISO-TP frame — len=2 hex=1003
+[2026-05-26 12:35:13.367] [DBG] [ecu.isotp_server            ] [isotp_server.py:send:76] [SEND] ISO-TP frame — len=6 hex=5003003201F4
+[2026-05-26 12:35:13.371] [DBG] [ecu.isotp_server            ] [isotp_server.py:recv:62] [RECV] ISO-TP frame — len=2 hex=2701
+[2026-05-26 12:35:13.374] [DBG] [ecu.isotp_server            ] [isotp_server.py:send:76] [SEND] ISO-TP frame — len=4 hex=6701BEEF
+[2026-05-26 12:35:13.378] [DBG] [ecu.isotp_server            ] [isotp_server.py:recv:62] [RECV] ISO-TP frame — len=2 hex=1101
+[2026-05-26 12:35:13.380] [DBG] [ecu.isotp_server            ] [isotp_server.py:send:76] [SEND] ISO-TP frame — len=2 hex=5101
+[2026-05-26 12:35:13.884] [DBG] [ecu.isotp_server            ] [isotp_server.py:recv:62] [RECV] ISO-TP frame — len=2 hex=1003
+[2026-05-26 12:35:13.886] [DBG] [ecu.isotp_server            ] [isotp_server.py:send:76] [SEND] ISO-TP frame — len=6 hex=5003003201F4
+[2026-05-26 12:35:13.891] [DBG] [ecu.isotp_server            ] [isotp_server.py:recv:62] [RECV] ISO-TP frame — len=2 hex=2701
+[2026-05-26 12:35:13.891] [DBG] [ecu.isotp_server            ] [isotp_server.py:send:76] [SEND] ISO-TP frame — len=4 hex=6701BEEF
+[2026-05-26 12:35:13.896] [DBG] [ecu.isotp_server            ] [isotp_server.py:recv:62] [RECV] ISO-TP frame — len=2 hex=1101
+[2026-05-26 12:35:13.896] [DBG] [ecu.isotp_server            ] [isotp_server.py:send:76] [SEND] ISO-TP frame — len=2 hex=5101
+[2026-05-26 12:35:14.401] [DBG] [ecu.isotp_server            ] [isotp_server.py:recv:62] [RECV] ISO-TP frame — len=2 hex=1003
+[2026-05-26 12:35:14.402] [DBG] [ecu.isotp_server            ] [isotp_server.py:send:76] [SEND] ISO-TP frame — len=6 hex=5003003201F4
+[2026-05-26 12:35:14.407] [DBG] [ecu.isotp_server            ] [isotp_server.py:recv:62] [RECV] ISO-TP frame — len=2 hex=2701
+[2026-05-26 12:35:14.410] [DBG] [ecu.isotp_server            ] [isotp_server.py:send:76] [SEND] ISO-TP frame — len=4 hex=6701BEEF
+[2026-05-26 12:35:14.415] [DBG] [ecu.isotp_server            ] [isotp_server.py:recv:62] [RECV] ISO-TP frame — len=2 hex=1101
+[2026-05-26 12:35:14.415] [DBG] [ecu.isotp_server            ] [isotp_server.py:send:76] [SEND] ISO-TP frame — len=2 hex=5101
+[2026-05-26 12:35:14.919] [DBG] [ecu.isotp_server            ] [isotp_server.py:recv:62] [RECV] ISO-TP frame — len=2 hex=1003
+[2026-05-26 12:35:14.921] [DBG] [ecu.isotp_server            ] [isotp_server.py:send:76] [SEND] ISO-TP frame — len=6 hex=5003003201F4
+[2026-05-26 12:35:14.925] [DBG] [ecu.isotp_server            ] [isotp_server.py:recv:62] [RECV] ISO-TP frame — len=2 hex=2701
+[2026-05-26 12:35:14.926] [DBG] [ecu.isotp_server            ] [isotp_server.py:send:76] [SEND] ISO-TP frame — len=4 hex=6701BEEF
+[2026-05-26 12:35:14.931] [DBG] [ecu.isotp_server            ] [isotp_server.py:recv:62] [RECV] ISO-TP frame — len=2 hex=1101
+[2026-05-26 12:35:14.931] [DBG] [ecu.isotp_server            ] [isotp_server.py:send:76] [SEND] ISO-TP frame — len=2 hex=5101
+[2026-05-26 12:35:15.437] [DBG] [ecu.isotp_server            ] [isotp_server.py:recv:62] [RECV] ISO-TP frame — len=2 hex=1003
+[2026-05-26 12:35:15.437] [DBG] [ecu.isotp_server            ] [isotp_server.py:send:76] [SEND] ISO-TP frame — len=6 hex=5003003201F4
+[2026-05-26 12:35:15.442] [DBG] [ecu.isotp_server            ] [isotp_server.py:recv:62] [RECV] ISO-TP frame — len=2 hex=2701
+[2026-05-26 12:35:15.443] [DBG] [ecu.isotp_server            ] [isotp_server.py:send:76] [SEND] ISO-TP frame — len=4 hex=6701BEEF
+[2026-05-26 12:35:15.447] [DBG] [ecu.isotp_server            ] [isotp_server.py:recv:62] [RECV] ISO-TP frame — len=2 hex=1101
+[2026-05-26 12:35:15.448] [DBG] [ecu.isotp_server            ] [isotp_server.py:send:76] [SEND] ISO-TP frame — len=2 hex=5101
+[2026-05-26 12:35:15.952] [DBG] [ecu.isotp_server            ] [isotp_server.py:recv:62] [RECV] ISO-TP frame — len=2 hex=1003
+[2026-05-26 12:35:15.954] [DBG] [ecu.isotp_server            ] [isotp_server.py:send:76] [SEND] ISO-TP frame — len=6 hex=5003003201F4
+[2026-05-26 12:35:15.959] [DBG] [ecu.isotp_server            ] [isotp_server.py:recv:62] [RECV] ISO-TP frame — len=2 hex=2701
+[2026-05-26 12:35:15.961] [DBG] [ecu.isotp_server            ] [isotp_server.py:send:76] [SEND] ISO-TP frame — len=4 hex=6701BEEF
+[2026-05-26 12:35:15.965] [DBG] [ecu.isotp_server            ] [isotp_server.py:recv:62] [RECV] ISO-TP frame — len=2 hex=1101
+[2026-05-26 12:35:15.965] [DBG] [ecu.isotp_server            ] [isotp_server.py:send:76] [SEND] ISO-TP frame — len=2 hex=5101
+[2026-05-26 12:35:16.469] [DBG] [ecu.isotp_server            ] [isotp_server.py:recv:62] [RECV] ISO-TP frame — len=2 hex=1003
+[2026-05-26 12:35:16.470] [DBG] [ecu.isotp_server            ] [isotp_server.py:send:76] [SEND] ISO-TP frame — len=6 hex=5003003201F4
+[2026-05-26 12:35:16.475] [DBG] [ecu.isotp_server            ] [isotp_server.py:recv:62] [RECV] ISO-TP frame — len=2 hex=2701
+[2026-05-26 12:35:16.482] [DBG] [ecu.isotp_server            ] [isotp_server.py:send:76] [SEND] ISO-TP frame — len=4 hex=6701BEEF
+[2026-05-26 12:35:16.486] [DBG] [ecu.isotp_server            ] [isotp_server.py:recv:62] [RECV] ISO-TP frame — len=2 hex=1101
+[2026-05-26 12:35:16.487] [DBG] [ecu.isotp_server            ] [isotp_server.py:send:76] [SEND] ISO-TP frame — len=2 hex=5101
+[2026-05-26 12:35:16.991] [DBG] [ecu.isotp_server            ] [isotp_server.py:recv:62] [RECV] ISO-TP frame — len=2 hex=1003
+[2026-05-26 12:35:16.991] [DBG] [ecu.isotp_server            ] [isotp_server.py:send:76] [SEND] ISO-TP frame — len=6 hex=5003003201F4
+[2026-05-26 12:35:16.996] [DBG] [ecu.isotp_server            ] [isotp_server.py:recv:62] [RECV] ISO-TP frame — len=2 hex=2701
+[2026-05-26 12:35:16.997] [DBG] [ecu.isotp_server            ] [isotp_server.py:send:76] [SEND] ISO-TP frame — len=4 hex=6701BEEF
+[2026-05-26 12:35:17.001] [DBG] [ecu.isotp_server            ] [isotp_server.py:recv:62] [RECV] ISO-TP frame — len=2 hex=1101
+[2026-05-26 12:35:17.005] [DBG] [ecu.isotp_server            ] [isotp_server.py:send:76] [SEND] ISO-TP frame — len=2 hex=5101
+[2026-05-26 12:35:17.510] [DBG] [ecu.isotp_server            ] [isotp_server.py:recv:62] [RECV] ISO-TP frame — len=2 hex=1003
+[2026-05-26 12:35:17.511] [DBG] [ecu.isotp_server            ] [isotp_server.py:send:76] [SEND] ISO-TP frame — len=6 hex=5003003201F4
+[2026-05-26 12:35:17.515] [DBG] [ecu.isotp_server            ] [isotp_server.py:recv:62] [RECV] ISO-TP frame — len=2 hex=2701
+[2026-05-26 12:35:17.516] [DBG] [ecu.isotp_server            ] [isotp_server.py:send:76] [SEND] ISO-TP frame — len=4 hex=6701BEEF
+[2026-05-26 12:35:17.520] [DBG] [ecu.isotp_server            ] [isotp_server.py:recv:62] [RECV] ISO-TP frame — len=2 hex=1101
+[2026-05-26 12:35:17.521] [DBG] [ecu.isotp_server            ] [isotp_server.py:send:76] [SEND] ISO-TP frame — len=2 hex=5101
+[2026-05-26 12:35:18.024] [DBG] [ecu.isotp_server            ] [isotp_server.py:recv:62] [RECV] ISO-TP frame — len=2 hex=1003
+[2026-05-26 12:35:18.025] [DBG] [ecu.isotp_server            ] [isotp_server.py:send:76] [SEND] ISO-TP frame — len=6 hex=5003003201F4
+[2026-05-26 12:35:18.030] [DBG] [ecu.isotp_server            ] [isotp_server.py:recv:62] [RECV] ISO-TP frame — len=2 hex=2701
+[2026-05-26 12:35:18.032] [DBG] [ecu.isotp_server            ] [isotp_server.py:send:76] [SEND] ISO-TP frame — len=4 hex=6701BEEF
+[2026-05-26 12:35:18.036] [DBG] [ecu.isotp_server            ] [isotp_server.py:recv:62] [RECV] ISO-TP frame — len=2 hex=1101
+[2026-05-26 12:35:18.038] [DBG] [ecu.isotp_server            ] [isotp_server.py:send:76] [SEND] ISO-TP frame — len=2 hex=5101
+[2026-05-26 12:35:18.543] [DBG] [ecu.isotp_server            ] [isotp_server.py:recv:62] [RECV] ISO-TP frame — len=2 hex=1003
+[2026-05-26 12:35:18.544] [DBG] [ecu.isotp_server            ] [isotp_server.py:send:76] [SEND] ISO-TP frame — len=6 hex=5003003201F4
+[2026-05-26 12:35:18.548] [DBG] [ecu.isotp_server            ] [isotp_server.py:recv:62] [RECV] ISO-TP frame — len=2 hex=2701
+[2026-05-26 12:35:18.551] [DBG] [ecu.isotp_server            ] [isotp_server.py:send:76] [SEND] ISO-TP frame — len=4 hex=6701BEEF
+[2026-05-26 12:35:18.555] [DBG] [ecu.isotp_server            ] [isotp_server.py:recv:62] [RECV] ISO-TP frame — len=2 hex=1101
+[2026-05-26 12:35:18.557] [DBG] [ecu.isotp_server            ] [isotp_server.py:send:76] [SEND] ISO-TP frame — len=2 hex=5101
+[2026-05-26 12:35:19.063] [DBG] [ecu.isotp_server            ] [isotp_server.py:recv:62] [RECV] ISO-TP frame — len=2 hex=1003
+[2026-05-26 12:35:19.063] [DBG] [ecu.isotp_server            ] [isotp_server.py:send:76] [SEND] ISO-TP frame — len=6 hex=5003003201F4
+[2026-05-26 12:35:19.068] [DBG] [ecu.isotp_server            ] [isotp_server.py:recv:62] [RECV] ISO-TP frame — len=2 hex=2701
+[2026-05-26 12:35:19.069] [DBG] [ecu.isotp_server            ] [isotp_server.py:send:76] [SEND] ISO-TP frame — len=4 hex=6701BEEF
+[2026-05-26 12:35:19.073] [DBG] [ecu.isotp_server            ] [isotp_server.py:recv:62] [RECV] ISO-TP frame — len=2 hex=1101
+[2026-05-26 12:35:19.076] [DBG] [ecu.isotp_server            ] [isotp_server.py:send:76] [SEND] ISO-TP frame — len=2 hex=5101
+[2026-05-26 12:35:19.581] [DBG] [ecu.isotp_server            ] [isotp_server.py:recv:62] [RECV] ISO-TP frame — len=2 hex=1003
+[2026-05-26 12:35:19.582] [DBG] [ecu.isotp_server            ] [isotp_server.py:send:76] [SEND] ISO-TP frame — len=6 hex=5003003201F4
+[2026-05-26 12:35:19.586] [DBG] [ecu.isotp_server            ] [isotp_server.py:recv:62] [RECV] ISO-TP frame — len=2 hex=2701
+[2026-05-26 12:35:19.587] [DBG] [ecu.isotp_server            ] [isotp_server.py:send:76] [SEND] ISO-TP frame — len=4 hex=6701BEEF
+[2026-05-26 12:35:19.592] [DBG] [ecu.isotp_server            ] [isotp_server.py:recv:62] [RECV] ISO-TP frame — len=2 hex=1101
+[2026-05-26 12:35:19.592] [DBG] [ecu.isotp_server            ] [isotp_server.py:send:76] [SEND] ISO-TP frame — len=2 hex=5101
+[2026-05-26 12:35:20.096] [DBG] [ecu.isotp_server            ] [isotp_server.py:recv:62] [RECV] ISO-TP frame — len=2 hex=1003
+[2026-05-26 12:35:20.098] [DBG] [ecu.isotp_server            ] [isotp_server.py:send:76] [SEND] ISO-TP frame — len=6 hex=5003003201F4
+[2026-05-26 12:35:20.103] [DBG] [ecu.isotp_server            ] [isotp_server.py:recv:62] [RECV] ISO-TP frame — len=2 hex=2701
+[2026-05-26 12:35:20.104] [DBG] [ecu.isotp_server            ] [isotp_server.py:send:76] [SEND] ISO-TP frame — len=4 hex=6701BEEF
+[2026-05-26 12:35:20.108] [DBG] [ecu.isotp_server            ] [isotp_server.py:recv:62] [RECV] ISO-TP frame — len=2 hex=1101
+[2026-05-26 12:35:20.110] [DBG] [ecu.isotp_server            ] [isotp_server.py:send:76] [SEND] ISO-TP frame — len=2 hex=5101
+[2026-05-26 12:35:20.614] [DBG] [ecu.isotp_server            ] [isotp_server.py:recv:62] [RECV] ISO-TP frame — len=2 hex=1003
+[2026-05-26 12:35:20.616] [DBG] [ecu.isotp_server            ] [isotp_server.py:send:76] [SEND] ISO-TP frame — len=6 hex=5003003201F4
+[2026-05-26 12:35:20.621] [DBG] [ecu.isotp_server            ] [isotp_server.py:recv:62] [RECV] ISO-TP frame — len=2 hex=2701
+[2026-05-26 12:35:20.622] [DBG] [ecu.isotp_server            ] [isotp_server.py:send:76] [SEND] ISO-TP frame — len=4 hex=6701BEEF
+[2026-05-26 12:35:20.626] [DBG] [ecu.isotp_server            ] [isotp_server.py:recv:62] [RECV] ISO-TP frame — len=2 hex=1101
+[2026-05-26 12:35:20.630] [DBG] [ecu.isotp_server            ] [isotp_server.py:send:76] [SEND] ISO-TP frame — len=2 hex=5101
+[2026-05-26 12:35:21.135] [DBG] [ecu.isotp_server            ] [isotp_server.py:recv:62] [RECV] ISO-TP frame — len=2 hex=1003
+[2026-05-26 12:35:21.136] [DBG] [ecu.isotp_server            ] [isotp_server.py:send:76] [SEND] ISO-TP frame — len=6 hex=5003003201F4
+[2026-05-26 12:35:21.140] [DBG] [ecu.isotp_server            ] [isotp_server.py:recv:62] [RECV] ISO-TP frame — len=2 hex=2701
+[2026-05-26 12:35:21.141] [DBG] [ecu.isotp_server            ] [isotp_server.py:send:76] [SEND] ISO-TP frame — len=4 hex=6701BEEF
+[2026-05-26 12:35:21.146] [DBG] [ecu.isotp_server            ] [isotp_server.py:recv:62] [RECV] ISO-TP frame — len=2 hex=1101
+[2026-05-26 12:35:21.147] [DBG] [ecu.isotp_server            ] [isotp_server.py:send:76] [SEND] ISO-TP frame — len=2 hex=5101
+[2026-05-26 12:35:21.652] [DBG] [ecu.isotp_server            ] [isotp_server.py:recv:62] [RECV] ISO-TP frame — len=2 hex=1003
+[2026-05-26 12:35:21.653] [DBG] [ecu.isotp_server            ] [isotp_server.py:send:76] [SEND] ISO-TP frame — len=6 hex=5003003201F4
+[2026-05-26 12:35:21.658] [DBG] [ecu.isotp_server            ] [isotp_server.py:recv:62] [RECV] ISO-TP frame — len=2 hex=2701
+[2026-05-26 12:35:21.662] [DBG] [ecu.isotp_server            ] [isotp_server.py:send:76] [SEND] ISO-TP frame — len=4 hex=6701BEEF
+[2026-05-26 12:35:21.666] [DBG] [ecu.isotp_server            ] [isotp_server.py:recv:62] [RECV] ISO-TP frame — len=2 hex=1101
+[2026-05-26 12:35:21.667] [DBG] [ecu.isotp_server            ] [isotp_server.py:send:76] [SEND] ISO-TP frame — len=2 hex=5101
+[2026-05-26 12:35:22.171] [DBG] [ecu.isotp_server            ] [isotp_server.py:recv:62] [RECV] ISO-TP frame — len=2 hex=1003
+[2026-05-26 12:35:22.173] [DBG] [ecu.isotp_server            ] [isotp_server.py:send:76] [SEND] ISO-TP frame — len=6 hex=5003003201F4
+[2026-05-26 12:35:22.177] [DBG] [ecu.isotp_server            ] [isotp_server.py:recv:62] [RECV] ISO-TP frame — len=2 hex=2701
+[2026-05-26 12:35:22.180] [DBG] [ecu.isotp_server            ] [isotp_server.py:send:76] [SEND] ISO-TP frame — len=4 hex=6701BEEF
+[2026-05-26 12:35:22.184] [DBG] [ecu.isotp_server            ] [isotp_server.py:recv:62] [RECV] ISO-TP frame — len=2 hex=1101
+[2026-05-26 12:35:22.185] [DBG] [ecu.isotp_server            ] [isotp_server.py:send:76] [SEND] ISO-TP frame — len=2 hex=5101
+[2026-05-26 12:35:22.688] [DBG] [ecu.isotp_server            ] [isotp_server.py:recv:62] [RECV] ISO-TP frame — len=2 hex=1003
+[2026-05-26 12:35:22.689] [DBG] [ecu.isotp_server            ] [isotp_server.py:send:76] [SEND] ISO-TP frame — len=6 hex=5003003201F4
+[2026-05-26 12:35:22.693] [DBG] [ecu.isotp_server            ] [isotp_server.py:recv:62] [RECV] ISO-TP frame — len=2 hex=2701
+[2026-05-26 12:35:22.695] [DBG] [ecu.isotp_server            ] [isotp_server.py:send:76] [SEND] ISO-TP frame — len=4 hex=6701BEEF
+[2026-05-26 12:35:22.699] [DBG] [ecu.isotp_server            ] [isotp_server.py:recv:62] [RECV] ISO-TP frame — len=2 hex=1101
+[2026-05-26 12:35:22.700] [DBG] [ecu.isotp_server            ] [isotp_server.py:send:76] [SEND] ISO-TP frame — len=2 hex=5101
+[2026-05-26 12:35:23.205] [DBG] [ecu.isotp_server            ] [isotp_server.py:recv:62] [RECV] ISO-TP frame — len=2 hex=1003
+[2026-05-26 12:35:23.206] [DBG] [ecu.isotp_server            ] [isotp_server.py:send:76] [SEND] ISO-TP frame — len=6 hex=5003003201F4
+[2026-05-26 12:35:23.211] [DBG] [ecu.isotp_server            ] [isotp_server.py:recv:62] [RECV] ISO-TP frame — len=2 hex=2701
+[2026-05-26 12:35:23.212] [DBG] [ecu.isotp_server            ] [isotp_server.py:send:76] [SEND] ISO-TP frame — len=4 hex=6701BEEF
+[2026-05-26 12:35:23.217] [DBG] [ecu.isotp_server            ] [isotp_server.py:recv:62] [RECV] ISO-TP frame — len=2 hex=1101
+[2026-05-26 12:35:23.219] [DBG] [ecu.isotp_server            ] [isotp_server.py:send:76] [SEND] ISO-TP frame — len=2 hex=5101
+[2026-05-26 12:35:23.724] [DBG] [ecu.isotp_server            ] [isotp_server.py:recv:62] [RECV] ISO-TP frame — len=2 hex=1003
+[2026-05-26 12:35:23.725] [DBG] [ecu.isotp_server            ] [isotp_server.py:send:76] [SEND] ISO-TP frame — len=6 hex=5003003201F4
+[2026-05-26 12:35:23.730] [DBG] [ecu.isotp_server            ] [isotp_server.py:recv:62] [RECV] ISO-TP frame — len=2 hex=2701
+[2026-05-26 12:35:23.737] [DBG] [ecu.isotp_server            ] [isotp_server.py:send:76] [SEND] ISO-TP frame — len=4 hex=6701BEEF
+[2026-05-26 12:35:23.741] [DBG] [ecu.isotp_server            ] [isotp_server.py:recv:62] [RECV] ISO-TP frame — len=2 hex=1101
+[2026-05-26 12:35:23.742] [DBG] [ecu.isotp_server            ] [isotp_server.py:send:76] [SEND] ISO-TP frame — len=2 hex=5101
+[2026-05-26 12:35:24.246] [DBG] [ecu.isotp_server            ] [isotp_server.py:recv:62] [RECV] ISO-TP frame — len=2 hex=1003
+[2026-05-26 12:35:24.247] [DBG] [ecu.isotp_server            ] [isotp_server.py:send:76] [SEND] ISO-TP frame — len=6 hex=5003003201F4
+[2026-05-26 12:35:24.251] [DBG] [ecu.isotp_server            ] [isotp_server.py:recv:62] [RECV] ISO-TP frame — len=2 hex=2701
+[2026-05-26 12:35:24.254] [DBG] [ecu.isotp_server            ] [isotp_server.py:send:76] [SEND] ISO-TP frame — len=4 hex=6701BEEF
+[2026-05-26 12:35:24.259] [DBG] [ecu.isotp_server            ] [isotp_server.py:recv:62] [RECV] ISO-TP frame — len=2 hex=1101
+[2026-05-26 12:35:24.261] [DBG] [ecu.isotp_server            ] [isotp_server.py:send:76] [SEND] ISO-TP frame — len=2 hex=5101
+[2026-05-26 12:35:24.764] [DBG] [ecu.isotp_server            ] [isotp_server.py:recv:62] [RECV] ISO-TP frame — len=2 hex=1003
+[2026-05-26 12:35:24.765] [DBG] [ecu.isotp_server            ] [isotp_server.py:send:76] [SEND] ISO-TP frame — len=6 hex=5003003201F4
+[2026-05-26 12:35:24.769] [DBG] [ecu.isotp_server            ] [isotp_server.py:recv:62] [RECV] ISO-TP frame — len=2 hex=2701
+[2026-05-26 12:35:24.772] [DBG] [ecu.isotp_server            ] [isotp_server.py:send:76] [SEND] ISO-TP frame — len=4 hex=6701BEEF
+[2026-05-26 12:35:24.776] [DBG] [ecu.isotp_server            ] [isotp_server.py:recv:62] [RECV] ISO-TP frame — len=2 hex=1101
+[2026-05-26 12:35:24.777] [DBG] [ecu.isotp_server            ] [isotp_server.py:send:76] [SEND] ISO-TP frame — len=2 hex=5101
+[2026-05-26 12:35:25.282] [DBG] [ecu.isotp_server            ] [isotp_server.py:recv:62] [RECV] ISO-TP frame — len=2 hex=1003
+[2026-05-26 12:35:25.283] [DBG] [ecu.isotp_server            ] [isotp_server.py:send:76] [SEND] ISO-TP frame — len=6 hex=5003003201F4
+[2026-05-26 12:35:25.287] [DBG] [ecu.isotp_server            ] [isotp_server.py:recv:62] [RECV] ISO-TP frame — len=2 hex=2701
+[2026-05-26 12:35:25.291] [DBG] [ecu.isotp_server            ] [isotp_server.py:send:76] [SEND] ISO-TP frame — len=4 hex=6701BEEF
+[2026-05-26 12:35:25.296] [DBG] [ecu.isotp_server            ] [isotp_server.py:recv:62] [RECV] ISO-TP frame — len=2 hex=1101
+[2026-05-26 12:35:25.297] [DBG] [ecu.isotp_server            ] [isotp_server.py:send:76] [SEND] ISO-TP frame — len=2 hex=5101
+[2026-05-26 12:35:25.802] [DBG] [ecu.isotp_server            ] [isotp_server.py:recv:62] [RECV] ISO-TP frame — len=2 hex=1003
+[2026-05-26 12:35:25.803] [DBG] [ecu.isotp_server            ] [isotp_server.py:send:76] [SEND] ISO-TP frame — len=6 hex=5003003201F4
+[2026-05-26 12:35:25.807] [DBG] [ecu.isotp_server            ] [isotp_server.py:recv:62] [RECV] ISO-TP frame — len=2 hex=2701
+[2026-05-26 12:35:25.810] [DBG] [ecu.isotp_server            ] [isotp_server.py:send:76] [SEND] ISO-TP frame — len=4 hex=6701BEEF
+[2026-05-26 12:35:25.814] [DBG] [ecu.isotp_server            ] [isotp_server.py:recv:62] [RECV] ISO-TP frame — len=2 hex=1101
+[2026-05-26 12:35:25.815] [DBG] [ecu.isotp_server            ] [isotp_server.py:send:76] [SEND] ISO-TP frame — len=2 hex=5101
+[2026-05-26 12:35:26.320] [DBG] [ecu.isotp_server            ] [isotp_server.py:recv:62] [RECV] ISO-TP frame — len=2 hex=1003
+[2026-05-26 12:35:26.320] [DBG] [ecu.isotp_server            ] [isotp_server.py:send:76] [SEND] ISO-TP frame — len=6 hex=5003003201F4
+[2026-05-26 12:35:26.325] [DBG] [ecu.isotp_server            ] [isotp_server.py:recv:62] [RECV] ISO-TP frame — len=2 hex=2701
+[2026-05-26 12:35:26.328] [DBG] [ecu.isotp_server            ] [isotp_server.py:send:76] [SEND] ISO-TP frame — len=4 hex=6701BEEF
+[2026-05-26 12:35:26.332] [DBG] [ecu.isotp_server            ] [isotp_server.py:recv:62] [RECV] ISO-TP frame — len=2 hex=1101
+[2026-05-26 12:35:26.334] [DBG] [ecu.isotp_server            ] [isotp_server.py:send:76] [SEND] ISO-TP frame — len=2 hex=5101
+[2026-05-26 12:35:26.839] [DBG] [ecu.isotp_server            ] [isotp_server.py:recv:62] [RECV] ISO-TP frame — len=2 hex=1003
+[2026-05-26 12:35:26.840] [DBG] [ecu.isotp_server            ] [isotp_server.py:send:76] [SEND] ISO-TP frame — len=6 hex=5003003201F4
+[2026-05-26 12:35:26.845] [DBG] [ecu.isotp_server            ] [isotp_server.py:recv:62] [RECV] ISO-TP frame — len=2 hex=2701
+[2026-05-26 12:35:26.847] [DBG] [ecu.isotp_server            ] [isotp_server.py:send:76] [SEND] ISO-TP frame — len=4 hex=6701BEEF
+[2026-05-26 12:35:26.851] [DBG] [ecu.isotp_server            ] [isotp_server.py:recv:62] [RECV] ISO-TP frame — len=2 hex=1101
+[2026-05-26 12:35:26.851] [DBG] [ecu.isotp_server            ] [isotp_server.py:send:76] [SEND] ISO-TP frame — len=2 hex=5101
+[2026-05-26 12:35:27.356] [DBG] [ecu.isotp_server            ] [isotp_server.py:recv:62] [RECV] ISO-TP frame — len=2 hex=1003
+[2026-05-26 12:35:27.358] [DBG] [ecu.isotp_server            ] [isotp_server.py:send:76] [SEND] ISO-TP frame — len=6 hex=5003003201F4
+[2026-05-26 12:35:27.362] [DBG] [ecu.isotp_server            ] [isotp_server.py:recv:62] [RECV] ISO-TP frame — len=2 hex=2701
+[2026-05-26 12:35:27.363] [DBG] [ecu.isotp_server            ] [isotp_server.py:send:76] [SEND] ISO-TP frame — len=4 hex=6701BEEF
+[2026-05-26 12:35:27.368] [DBG] [ecu.isotp_server            ] [isotp_server.py:recv:62] [RECV] ISO-TP frame — len=2 hex=1101
+[2026-05-26 12:35:27.368] [DBG] [ecu.isotp_server            ] [isotp_server.py:send:76] [SEND] ISO-TP frame — len=2 hex=5101
+[2026-05-26 12:35:27.874] [DBG] [ecu.isotp_server            ] [isotp_server.py:recv:62] [RECV] ISO-TP frame — len=2 hex=1003
+[2026-05-26 12:35:27.876] [DBG] [ecu.isotp_server            ] [isotp_server.py:send:76] [SEND] ISO-TP frame — len=6 hex=5003003201F4
+[2026-05-26 12:35:27.880] [DBG] [ecu.isotp_server            ] [isotp_server.py:recv:62] [RECV] ISO-TP frame — len=2 hex=2701
+[2026-05-26 12:35:27.884] [DBG] [ecu.isotp_server            ] [isotp_server.py:send:76] [SEND] ISO-TP frame — len=4 hex=6701BEEF
+[2026-05-26 12:35:27.889] [DBG] [ecu.isotp_server            ] [isotp_server.py:recv:62] [RECV] ISO-TP frame — len=2 hex=1101
+[2026-05-26 12:35:27.889] [DBG] [ecu.isotp_server            ] [isotp_server.py:send:76] [SEND] ISO-TP frame — len=2 hex=5101
+[2026-05-26 12:35:28.394] [DBG] [ecu.isotp_server            ] [isotp_server.py:recv:62] [RECV] ISO-TP frame — len=2 hex=1003
+[2026-05-26 12:35:28.395] [DBG] [ecu.isotp_server            ] [isotp_server.py:send:76] [SEND] ISO-TP frame — len=6 hex=5003003201F4
+[2026-05-26 12:35:28.400] [DBG] [ecu.isotp_server            ] [isotp_server.py:recv:62] [RECV] ISO-TP frame — len=2 hex=2701
+[2026-05-26 12:35:28.412] [DBG] [ecu.isotp_server            ] [isotp_server.py:send:76] [SEND] ISO-TP frame — len=4 hex=6701BEEF
+[2026-05-26 12:35:28.417] [DBG] [ecu.isotp_server            ] [isotp_server.py:recv:62] [RECV] ISO-TP frame — len=2 hex=1101
+[2026-05-26 12:35:28.418] [DBG] [ecu.isotp_server            ] [isotp_server.py:send:76] [SEND] ISO-TP frame — len=2 hex=5101
+[2026-05-26 12:35:28.922] [DBG] [ecu.isotp_server            ] [isotp_server.py:recv:62] [RECV] ISO-TP frame — len=2 hex=1003
+[2026-05-26 12:35:28.923] [DBG] [ecu.isotp_server            ] [isotp_server.py:send:76] [SEND] ISO-TP frame — len=6 hex=5003003201F4
+[2026-05-26 12:35:28.927] [DBG] [ecu.isotp_server            ] [isotp_server.py:recv:62] [RECV] ISO-TP frame — len=2 hex=2701
+[2026-05-26 12:35:28.932] [DBG] [ecu.isotp_server            ] [isotp_server.py:send:76] [SEND] ISO-TP frame — len=4 hex=6701BEEF
+[2026-05-26 12:35:28.937] [DBG] [ecu.isotp_server            ] [isotp_server.py:recv:62] [RECV] ISO-TP frame — len=2 hex=1101
+[2026-05-26 12:35:28.938] [DBG] [ecu.isotp_server            ] [isotp_server.py:send:76] [SEND] ISO-TP frame — len=2 hex=5101
+[2026-05-26 12:35:29.443] [DBG] [ecu.isotp_server            ] [isotp_server.py:recv:62] [RECV] ISO-TP frame — len=2 hex=1003
+[2026-05-26 12:35:29.446] [DBG] [ecu.isotp_server            ] [isotp_server.py:send:76] [SEND] ISO-TP frame — len=6 hex=5003003201F4
+[2026-05-26 12:35:29.450] [DBG] [ecu.isotp_server            ] [isotp_server.py:recv:62] [RECV] ISO-TP frame — len=2 hex=2701
+[2026-05-26 12:35:29.451] [DBG] [ecu.isotp_server            ] [isotp_server.py:send:76] [SEND] ISO-TP frame — len=4 hex=6701BEEF
+[2026-05-26 12:35:29.456] [DBG] [ecu.isotp_server            ] [isotp_server.py:recv:62] [RECV] ISO-TP frame — len=2 hex=1101
+[2026-05-26 12:35:29.456] [DBG] [ecu.isotp_server            ] [isotp_server.py:send:76] [SEND] ISO-TP frame — len=2 hex=5101
+[2026-05-26 12:35:29.960] [DBG] [ecu.isotp_server            ] [isotp_server.py:recv:62] [RECV] ISO-TP frame — len=2 hex=1003
+[2026-05-26 12:35:29.998] [DBG] [ecu.isotp_server            ] [isotp_server.py:send:76] [SEND] ISO-TP frame — len=6 hex=5003003201F4
+[2026-05-26 12:35:30.003] [DBG] [ecu.isotp_server            ] [isotp_server.py:recv:62] [RECV] ISO-TP frame — len=2 hex=2701
+[2026-05-26 12:35:30.006] [DBG] [ecu.isotp_server            ] [isotp_server.py:send:76] [SEND] ISO-TP frame — len=4 hex=6701BEEF
+[2026-05-26 12:35:30.011] [DBG] [ecu.isotp_server            ] [isotp_server.py:recv:62] [RECV] ISO-TP frame — len=2 hex=1101
+[2026-05-26 12:35:30.011] [DBG] [ecu.isotp_server            ] [isotp_server.py:send:76] [SEND] ISO-TP frame — len=2 hex=5101
+[2026-05-26 12:35:30.515] [DBG] [ecu.isotp_server            ] [isotp_server.py:recv:62] [RECV] ISO-TP frame — len=2 hex=1003
+[2026-05-26 12:35:30.516] [DBG] [ecu.isotp_server            ] [isotp_server.py:send:76] [SEND] ISO-TP frame — len=6 hex=5003003201F4
+[2026-05-26 12:35:30.520] [DBG] [ecu.isotp_server            ] [isotp_server.py:recv:62] [RECV] ISO-TP frame — len=2 hex=2701
+[2026-05-26 12:35:30.523] [DBG] [ecu.isotp_server            ] [isotp_server.py:send:76] [SEND] ISO-TP frame — len=4 hex=6701BEEF
+[2026-05-26 12:35:30.527] [DBG] [ecu.isotp_server            ] [isotp_server.py:recv:62] [RECV] ISO-TP frame — len=2 hex=1101
+[2026-05-26 12:35:30.529] [DBG] [ecu.isotp_server            ] [isotp_server.py:send:76] [SEND] ISO-TP frame — len=2 hex=5101
+[2026-05-26 12:35:31.033] [DBG] [ecu.isotp_server            ] [isotp_server.py:recv:62] [RECV] ISO-TP frame — len=2 hex=1003
+[2026-05-26 12:35:31.035] [DBG] [ecu.isotp_server            ] [isotp_server.py:send:76] [SEND] ISO-TP frame — len=6 hex=5003003201F4
+[2026-05-26 12:35:31.039] [DBG] [ecu.isotp_server            ] [isotp_server.py:recv:62] [RECV] ISO-TP frame — len=2 hex=2701
+[2026-05-26 12:35:31.041] [DBG] [ecu.isotp_server            ] [isotp_server.py:send:76] [SEND] ISO-TP frame — len=4 hex=6701BEEF
+[2026-05-26 12:35:31.045] [DBG] [ecu.isotp_server            ] [isotp_server.py:recv:62] [RECV] ISO-TP frame — len=2 hex=1101
+[2026-05-26 12:35:31.046] [DBG] [ecu.isotp_server            ] [isotp_server.py:send:76] [SEND] ISO-TP frame — len=2 hex=5101
+[2026-05-26 12:35:31.551] [DBG] [ecu.isotp_server            ] [isotp_server.py:recv:62] [RECV] ISO-TP frame — len=2 hex=1003
+[2026-05-26 12:35:31.552] [DBG] [ecu.isotp_server            ] [isotp_server.py:send:76] [SEND] ISO-TP frame — len=6 hex=5003003201F4
+[2026-05-26 12:35:31.556] [DBG] [ecu.isotp_server            ] [isotp_server.py:recv:62] [RECV] ISO-TP frame — len=2 hex=2701
+[2026-05-26 12:35:31.563] [DBG] [ecu.isotp_server            ] [isotp_server.py:send:76] [SEND] ISO-TP frame — len=4 hex=6701BEEF
+[2026-05-26 12:35:31.567] [DBG] [ecu.isotp_server            ] [isotp_server.py:recv:62] [RECV] ISO-TP frame — len=2 hex=1101
+[2026-05-26 12:35:31.570] [DBG] [ecu.isotp_server            ] [isotp_server.py:send:76] [SEND] ISO-TP frame — len=2 hex=5101
+[2026-05-26 12:35:32.074] [DBG] [ecu.isotp_server            ] [isotp_server.py:recv:62] [RECV] ISO-TP frame — len=2 hex=1003
+[2026-05-26 12:35:32.075] [DBG] [ecu.isotp_server            ] [isotp_server.py:send:76] [SEND] ISO-TP frame — len=6 hex=5003003201F4
+[2026-05-26 12:35:32.079] [DBG] [ecu.isotp_server            ] [isotp_server.py:recv:62] [RECV] ISO-TP frame — len=2 hex=2701
+[2026-05-26 12:35:32.082] [DBG] [ecu.isotp_server            ] [isotp_server.py:send:76] [SEND] ISO-TP frame — len=4 hex=6701BEEF
+[2026-05-26 12:35:32.086] [DBG] [ecu.isotp_server            ] [isotp_server.py:recv:62] [RECV] ISO-TP frame — len=2 hex=1101
+[2026-05-26 12:35:32.088] [DBG] [ecu.isotp_server            ] [isotp_server.py:send:76] [SEND] ISO-TP frame — len=2 hex=5101
+[2026-05-26 12:35:32.593] [DBG] [ecu.isotp_server            ] [isotp_server.py:recv:62] [RECV] ISO-TP frame — len=2 hex=1003
+[2026-05-26 12:35:32.594] [DBG] [ecu.isotp_server            ] [isotp_server.py:send:76] [SEND] ISO-TP frame — len=6 hex=5003003201F4
+[2026-05-26 12:35:32.598] [DBG] [ecu.isotp_server            ] [isotp_server.py:recv:62] [RECV] ISO-TP frame — len=2 hex=2701
+[2026-05-26 12:35:32.603] [DBG] [ecu.isotp_server            ] [isotp_server.py:send:76] [SEND] ISO-TP frame — len=4 hex=6701BEEF
+[2026-05-26 12:35:32.608] [DBG] [ecu.isotp_server            ] [isotp_server.py:recv:62] [RECV] ISO-TP frame — len=2 hex=1101
+[2026-05-26 12:35:32.608] [DBG] [ecu.isotp_server            ] [isotp_server.py:send:76] [SEND] ISO-TP frame — len=2 hex=5101
+[2026-05-26 12:35:33.113] [DBG] [ecu.isotp_server            ] [isotp_server.py:recv:62] [RECV] ISO-TP frame — len=2 hex=1003
+[2026-05-26 12:35:33.114] [DBG] [ecu.isotp_server            ] [isotp_server.py:send:76] [SEND] ISO-TP frame — len=6 hex=5003003201F4
+[2026-05-26 12:35:33.119] [DBG] [ecu.isotp_server            ] [isotp_server.py:recv:62] [RECV] ISO-TP frame — len=2 hex=2701
+[2026-05-26 12:35:33.123] [DBG] [ecu.isotp_server            ] [isotp_server.py:send:76] [SEND] ISO-TP frame — len=4 hex=6701BEEF
+[2026-05-26 12:35:33.127] [DBG] [ecu.isotp_server            ] [isotp_server.py:recv:62] [RECV] ISO-TP frame — len=2 hex=1101
+[2026-05-26 12:35:33.127] [DBG] [ecu.isotp_server            ] [isotp_server.py:send:76] [SEND] ISO-TP frame — len=2 hex=5101
+[2026-05-26 12:35:33.633] [DBG] [ecu.isotp_server            ] [isotp_server.py:recv:62] [RECV] ISO-TP frame — len=2 hex=1003
+[2026-05-26 12:35:33.634] [DBG] [ecu.isotp_server            ] [isotp_server.py:send:76] [SEND] ISO-TP frame — len=6 hex=5003003201F4
+[2026-05-26 12:35:33.638] [DBG] [ecu.isotp_server            ] [isotp_server.py:recv:62] [RECV] ISO-TP frame — len=2 hex=2701
+[2026-05-26 12:35:33.640] [DBG] [ecu.isotp_server            ] [isotp_server.py:send:76] [SEND] ISO-TP frame — len=4 hex=6701BEEF
+[2026-05-26 12:35:33.644] [DBG] [ecu.isotp_server            ] [isotp_server.py:recv:62] [RECV] ISO-TP frame — len=2 hex=1101
+[2026-05-26 12:35:33.644] [DBG] [ecu.isotp_server            ] [isotp_server.py:send:76] [SEND] ISO-TP frame — len=2 hex=5101
+[2026-05-26 12:35:34.149] [DBG] [ecu.isotp_server            ] [isotp_server.py:recv:62] [RECV] ISO-TP frame — len=2 hex=1003
+[2026-05-26 12:35:34.150] [DBG] [ecu.isotp_server            ] [isotp_server.py:send:76] [SEND] ISO-TP frame — len=6 hex=5003003201F4
+[2026-05-26 12:35:34.154] [DBG] [ecu.isotp_server            ] [isotp_server.py:recv:62] [RECV] ISO-TP frame — len=2 hex=2701
+[2026-05-26 12:35:34.158] [DBG] [ecu.isotp_server            ] [isotp_server.py:send:76] [SEND] ISO-TP frame — len=4 hex=6701BEEF
+[2026-05-26 12:35:34.162] [DBG] [ecu.isotp_server            ] [isotp_server.py:recv:62] [RECV] ISO-TP frame — len=2 hex=1101
+[2026-05-26 12:35:34.162] [DBG] [ecu.isotp_server            ] [isotp_server.py:send:76] [SEND] ISO-TP frame — len=2 hex=5101
+[2026-05-26 12:35:34.668] [DBG] [ecu.isotp_server            ] [isotp_server.py:recv:62] [RECV] ISO-TP frame — len=2 hex=1003
+[2026-05-26 12:35:34.670] [DBG] [ecu.isotp_server            ] [isotp_server.py:send:76] [SEND] ISO-TP frame — len=6 hex=5003003201F4
+[2026-05-26 12:35:34.675] [DBG] [ecu.isotp_server            ] [isotp_server.py:recv:62] [RECV] ISO-TP frame — len=2 hex=2701
+[2026-05-26 12:35:34.676] [DBG] [ecu.isotp_server            ] [isotp_server.py:send:76] [SEND] ISO-TP frame — len=4 hex=6701BEEF
+[2026-05-26 12:35:34.680] [DBG] [ecu.isotp_server            ] [isotp_server.py:recv:62] [RECV] ISO-TP frame — len=2 hex=1101
+[2026-05-26 12:35:34.682] [DBG] [ecu.isotp_server            ] [isotp_server.py:send:76] [SEND] ISO-TP frame — len=2 hex=5101
+[2026-05-26 12:35:35.186] [DBG] [ecu.isotp_server            ] [isotp_server.py:recv:62] [RECV] ISO-TP frame — len=2 hex=1003
+[2026-05-26 12:35:35.187] [DBG] [ecu.isotp_server            ] [isotp_server.py:send:76] [SEND] ISO-TP frame — len=6 hex=5003003201F4
+[2026-05-26 12:35:35.191] [DBG] [ecu.isotp_server            ] [isotp_server.py:recv:62] [RECV] ISO-TP frame — len=2 hex=2701
+[2026-05-26 12:35:35.194] [DBG] [ecu.isotp_server            ] [isotp_server.py:send:76] [SEND] ISO-TP frame — len=4 hex=6701BEEF
+[2026-05-26 12:35:35.198] [DBG] [ecu.isotp_server            ] [isotp_server.py:recv:62] [RECV] ISO-TP frame — len=2 hex=1101
+[2026-05-26 12:35:35.200] [DBG] [ecu.isotp_server            ] [isotp_server.py:send:76] [SEND] ISO-TP frame — len=2 hex=5101
+[2026-05-26 12:35:35.704] [DBG] [ecu.isotp_server            ] [isotp_server.py:recv:62] [RECV] ISO-TP frame — len=2 hex=1003
+[2026-05-26 12:35:35.705] [DBG] [ecu.isotp_server            ] [isotp_server.py:send:76] [SEND] ISO-TP frame — len=6 hex=5003003201F4
+[2026-05-26 12:35:35.709] [DBG] [ecu.isotp_server            ] [isotp_server.py:recv:62] [RECV] ISO-TP frame — len=2 hex=2701
+[2026-05-26 12:35:35.710] [DBG] [ecu.isotp_server            ] [isotp_server.py:send:76] [SEND] ISO-TP frame — len=4 hex=6701BEEF
+[2026-05-26 12:35:35.714] [DBG] [ecu.isotp_server            ] [isotp_server.py:recv:62] [RECV] ISO-TP frame — len=2 hex=1101
+[2026-05-26 12:35:35.716] [DBG] [ecu.isotp_server            ] [isotp_server.py:send:76] [SEND] ISO-TP frame — len=2 hex=5101
+[2026-05-26 12:35:36.220] [DBG] [ecu.isotp_server            ] [isotp_server.py:recv:62] [RECV] ISO-TP frame — len=2 hex=1003
+[2026-05-26 12:35:36.222] [DBG] [ecu.isotp_server            ] [isotp_server.py:send:76] [SEND] ISO-TP frame — len=6 hex=5003003201F4
+[2026-05-26 12:35:36.226] [DBG] [ecu.isotp_server            ] [isotp_server.py:recv:62] [RECV] ISO-TP frame — len=2 hex=2701
+[2026-05-26 12:35:36.231] [DBG] [ecu.isotp_server            ] [isotp_server.py:send:76] [SEND] ISO-TP frame — len=4 hex=6701BEEF
+[2026-05-26 12:35:36.235] [DBG] [ecu.isotp_server            ] [isotp_server.py:recv:62] [RECV] ISO-TP frame — len=2 hex=1101
+[2026-05-26 12:35:36.236] [DBG] [ecu.isotp_server            ] [isotp_server.py:send:76] [SEND] ISO-TP frame — len=2 hex=5101
+[2026-05-26 12:35:36.741] [DBG] [ecu.isotp_server            ] [isotp_server.py:recv:62] [RECV] ISO-TP frame — len=2 hex=1003
+[2026-05-26 12:35:36.742] [DBG] [ecu.isotp_server            ] [isotp_server.py:send:76] [SEND] ISO-TP frame — len=6 hex=5003003201F4
+[2026-05-26 12:35:36.746] [DBG] [ecu.isotp_server            ] [isotp_server.py:recv:62] [RECV] ISO-TP frame — len=2 hex=2701
+[2026-05-26 12:35:36.750] [DBG] [ecu.isotp_server            ] [isotp_server.py:send:76] [SEND] ISO-TP frame — len=4 hex=6701BEEF
+[2026-05-26 12:35:36.754] [DBG] [ecu.isotp_server            ] [isotp_server.py:recv:62] [RECV] ISO-TP frame — len=2 hex=1101
+[2026-05-26 12:35:36.759] [DBG] [ecu.isotp_server            ] [isotp_server.py:send:76] [SEND] ISO-TP frame — len=2 hex=5101
+[2026-05-26 12:35:37.264] [DBG] [ecu.isotp_server            ] [isotp_server.py:recv:62] [RECV] ISO-TP frame — len=2 hex=1003
+[2026-05-26 12:35:37.265] [DBG] [ecu.isotp_server            ] [isotp_server.py:send:76] [SEND] ISO-TP frame — len=6 hex=5003003201F4
+[2026-05-26 12:35:37.269] [DBG] [ecu.isotp_server            ] [isotp_server.py:recv:62] [RECV] ISO-TP frame — len=2 hex=2701
+[2026-05-26 12:35:37.273] [DBG] [ecu.isotp_server            ] [isotp_server.py:send:76] [SEND] ISO-TP frame — len=4 hex=6701BEEF
+[2026-05-26 12:35:37.278] [DBG] [ecu.isotp_server            ] [isotp_server.py:recv:62] [RECV] ISO-TP frame — len=2 hex=1101
+[2026-05-26 12:35:37.279] [DBG] [ecu.isotp_server            ] [isotp_server.py:send:76] [SEND] ISO-TP frame — len=2 hex=5101
+[2026-05-26 12:35:37.785] [DBG] [ecu.isotp_server            ] [isotp_server.py:recv:62] [RECV] ISO-TP frame — len=2 hex=1003
+[2026-05-26 12:35:37.788] [DBG] [ecu.isotp_server            ] [isotp_server.py:send:76] [SEND] ISO-TP frame — len=6 hex=5003003201F4
+[2026-05-26 12:35:37.793] [DBG] [ecu.isotp_server            ] [isotp_server.py:recv:62] [RECV] ISO-TP frame — len=2 hex=2701
+[2026-05-26 12:35:37.795] [DBG] [ecu.isotp_server            ] [isotp_server.py:send:76] [SEND] ISO-TP frame — len=4 hex=6701BEEF
+[2026-05-26 12:35:37.799] [DBG] [ecu.isotp_server            ] [isotp_server.py:recv:62] [RECV] ISO-TP frame — len=2 hex=1101
+[2026-05-26 12:35:37.799] [DBG] [ecu.isotp_server            ] [isotp_server.py:send:76] [SEND] ISO-TP frame — len=2 hex=5101
+[2026-05-26 12:35:38.303] [DBG] [ecu.isotp_server            ] [isotp_server.py:recv:62] [RECV] ISO-TP frame — len=2 hex=1003
+[2026-05-26 12:35:38.309] [DBG] [ecu.isotp_server            ] [isotp_server.py:send:76] [SEND] ISO-TP frame — len=6 hex=5003003201F4
+[2026-05-26 12:35:38.313] [DBG] [ecu.isotp_server            ] [isotp_server.py:recv:62] [RECV] ISO-TP frame — len=2 hex=2701
+[2026-05-26 12:35:38.317] [DBG] [ecu.isotp_server            ] [isotp_server.py:send:76] [SEND] ISO-TP frame — len=4 hex=6701BEEF
+[2026-05-26 12:35:38.321] [DBG] [ecu.isotp_server            ] [isotp_server.py:recv:62] [RECV] ISO-TP frame — len=2 hex=1101
+[2026-05-26 12:35:38.322] [DBG] [ecu.isotp_server            ] [isotp_server.py:send:76] [SEND] ISO-TP frame — len=2 hex=5101
+[2026-05-26 12:35:38.827] [DBG] [ecu.isotp_server            ] [isotp_server.py:recv:62] [RECV] ISO-TP frame — len=2 hex=1003
+[2026-05-26 12:35:38.828] [DBG] [ecu.isotp_server            ] [isotp_server.py:send:76] [SEND] ISO-TP frame — len=6 hex=5003003201F4
+[2026-05-26 12:35:38.833] [DBG] [ecu.isotp_server            ] [isotp_server.py:recv:62] [RECV] ISO-TP frame — len=2 hex=2701
+[2026-05-26 12:35:38.837] [DBG] [ecu.isotp_server            ] [isotp_server.py:send:76] [SEND] ISO-TP frame — len=4 hex=6701BEEF
+[2026-05-26 12:35:38.842] [DBG] [ecu.isotp_server            ] [isotp_server.py:recv:62] [RECV] ISO-TP frame — len=2 hex=1101
+[2026-05-26 12:35:38.842] [DBG] [ecu.isotp_server            ] [isotp_server.py:send:76] [SEND] ISO-TP frame — len=2 hex=5101
+[2026-05-26 12:35:39.347] [DBG] [ecu.isotp_server            ] [isotp_server.py:recv:62] [RECV] ISO-TP frame — len=2 hex=1003
+[2026-05-26 12:35:39.348] [DBG] [ecu.isotp_server            ] [isotp_server.py:send:76] [SEND] ISO-TP frame — len=6 hex=5003003201F4
+[2026-05-26 12:35:39.353] [DBG] [ecu.isotp_server            ] [isotp_server.py:recv:62] [RECV] ISO-TP frame — len=2 hex=2701
+[2026-05-26 12:35:39.354] [DBG] [ecu.isotp_server            ] [isotp_server.py:send:76] [SEND] ISO-TP frame — len=4 hex=6701BEEF
+[2026-05-26 12:35:39.359] [DBG] [ecu.isotp_server            ] [isotp_server.py:recv:62] [RECV] ISO-TP frame — len=2 hex=1101
+[2026-05-26 12:35:39.359] [DBG] [ecu.isotp_server            ] [isotp_server.py:send:76] [SEND] ISO-TP frame — len=2 hex=5101
+[2026-05-26 12:35:39.865] [DBG] [ecu.isotp_server            ] [isotp_server.py:recv:62] [RECV] ISO-TP frame — len=2 hex=1003
+[2026-05-26 12:35:39.867] [DBG] [ecu.isotp_server            ] [isotp_server.py:send:76] [SEND] ISO-TP frame — len=6 hex=5003003201F4
+[2026-05-26 12:35:39.871] [DBG] [ecu.isotp_server            ] [isotp_server.py:recv:62] [RECV] ISO-TP frame — len=2 hex=2701
+[2026-05-26 12:35:39.873] [DBG] [ecu.isotp_server            ] [isotp_server.py:send:76] [SEND] ISO-TP frame — len=4 hex=6701BEEF
+[2026-05-26 12:35:39.877] [DBG] [ecu.isotp_server            ] [isotp_server.py:recv:62] [RECV] ISO-TP frame — len=2 hex=1101
+[2026-05-26 12:35:39.881] [DBG] [ecu.isotp_server            ] [isotp_server.py:send:76] [SEND] ISO-TP frame — len=2 hex=5101
+[2026-05-26 12:35:40.387] [DBG] [ecu.isotp_server            ] [isotp_server.py:recv:62] [RECV] ISO-TP frame — len=2 hex=1003
+[2026-05-26 12:35:40.387] [DBG] [ecu.isotp_server            ] [isotp_server.py:send:76] [SEND] ISO-TP frame — len=6 hex=5003003201F4
+[2026-05-26 12:35:40.392] [DBG] [ecu.isotp_server            ] [isotp_server.py:recv:62] [RECV] ISO-TP frame — len=2 hex=2701
+[2026-05-26 12:35:40.393] [DBG] [ecu.isotp_server            ] [isotp_server.py:send:76] [SEND] ISO-TP frame — len=4 hex=6701BEEF
+[2026-05-26 12:35:40.397] [DBG] [ecu.isotp_server            ] [isotp_server.py:recv:62] [RECV] ISO-TP frame — len=2 hex=1101
+[2026-05-26 12:35:40.403] [DBG] [ecu.isotp_server            ] [isotp_server.py:send:76] [SEND] ISO-TP frame — len=2 hex=5101
+[2026-05-26 12:35:40.908] [DBG] [ecu.isotp_server            ] [isotp_server.py:recv:62] [RECV] ISO-TP frame — len=2 hex=1003
+[2026-05-26 12:35:40.915] [DBG] [ecu.isotp_server            ] [isotp_server.py:send:76] [SEND] ISO-TP frame — len=6 hex=5003003201F4
+[2026-05-26 12:35:40.920] [DBG] [ecu.isotp_server            ] [isotp_server.py:recv:62] [RECV] ISO-TP frame — len=2 hex=2701
+[2026-05-26 12:35:40.923] [DBG] [ecu.isotp_server            ] [isotp_server.py:send:76] [SEND] ISO-TP frame — len=4 hex=6701BEEF
+[2026-05-26 12:35:40.928] [DBG] [ecu.isotp_server            ] [isotp_server.py:recv:62] [RECV] ISO-TP frame — len=2 hex=1101
+[2026-05-26 12:35:40.929] [DBG] [ecu.isotp_server            ] [isotp_server.py:send:76] [SEND] ISO-TP frame — len=2 hex=5101
+[2026-05-26 12:35:41.434] [DBG] [ecu.isotp_server            ] [isotp_server.py:recv:62] [RECV] ISO-TP frame — len=2 hex=1003
+[2026-05-26 12:35:41.434] [DBG] [ecu.isotp_server            ] [isotp_server.py:send:76] [SEND] ISO-TP frame — len=6 hex=5003003201F4
+[2026-05-26 12:35:41.439] [DBG] [ecu.isotp_server            ] [isotp_server.py:recv:62] [RECV] ISO-TP frame — len=2 hex=2701
+[2026-05-26 12:35:41.442] [DBG] [ecu.isotp_server            ] [isotp_server.py:send:76] [SEND] ISO-TP frame — len=4 hex=6701BEEF
+[2026-05-26 12:35:41.447] [DBG] [ecu.isotp_server            ] [isotp_server.py:recv:62] [RECV] ISO-TP frame — len=2 hex=1101
+[2026-05-26 12:35:41.449] [DBG] [ecu.isotp_server            ] [isotp_server.py:send:76] [SEND] ISO-TP frame — len=2 hex=5101
+[2026-05-26 12:35:41.955] [DBG] [ecu.isotp_server            ] [isotp_server.py:recv:62] [RECV] ISO-TP frame — len=2 hex=1003
+[2026-05-26 12:35:41.956] [DBG] [ecu.isotp_server            ] [isotp_server.py:send:76] [SEND] ISO-TP frame — len=6 hex=5003003201F4
+[2026-05-26 12:35:41.961] [DBG] [ecu.isotp_server            ] [isotp_server.py:recv:62] [RECV] ISO-TP frame — len=2 hex=2701
+[2026-05-26 12:35:41.962] [DBG] [ecu.isotp_server            ] [isotp_server.py:send:76] [SEND] ISO-TP frame — len=4 hex=6701BEEF
+[2026-05-26 12:35:41.966] [DBG] [ecu.isotp_server            ] [isotp_server.py:recv:62] [RECV] ISO-TP frame — len=2 hex=1101
+[2026-05-26 12:35:41.966] [DBG] [ecu.isotp_server            ] [isotp_server.py:send:76] [SEND] ISO-TP frame — len=2 hex=5101
+[2026-05-26 12:35:42.472] [DBG] [ecu.isotp_server            ] [isotp_server.py:recv:62] [RECV] ISO-TP frame — len=2 hex=1003
+[2026-05-26 12:35:42.473] [DBG] [ecu.isotp_server            ] [isotp_server.py:send:76] [SEND] ISO-TP frame — len=6 hex=5003003201F4
+[2026-05-26 12:35:42.477] [DBG] [ecu.isotp_server            ] [isotp_server.py:recv:62] [RECV] ISO-TP frame — len=2 hex=2701
+[2026-05-26 12:35:42.480] [DBG] [ecu.isotp_server            ] [isotp_server.py:send:76] [SEND] ISO-TP frame — len=4 hex=6701BEEF
+[2026-05-26 12:35:42.484] [DBG] [ecu.isotp_server            ] [isotp_server.py:recv:62] [RECV] ISO-TP frame — len=2 hex=1101
+[2026-05-26 12:35:42.485] [DBG] [ecu.isotp_server            ] [isotp_server.py:send:76] [SEND] ISO-TP frame — len=2 hex=5101
+[2026-05-26 12:35:42.990] [DBG] [ecu.isotp_server            ] [isotp_server.py:recv:62] [RECV] ISO-TP frame — len=2 hex=1003
+[2026-05-26 12:35:42.993] [DBG] [ecu.isotp_server            ] [isotp_server.py:send:76] [SEND] ISO-TP frame — len=6 hex=5003003201F4
+[2026-05-26 12:35:42.997] [DBG] [ecu.isotp_server            ] [isotp_server.py:recv:62] [RECV] ISO-TP frame — len=2 hex=2701
+[2026-05-26 12:35:43.001] [DBG] [ecu.isotp_server            ] [isotp_server.py:send:76] [SEND] ISO-TP frame — len=4 hex=6701BEEF
+[2026-05-26 12:35:43.006] [DBG] [ecu.isotp_server            ] [isotp_server.py:recv:62] [RECV] ISO-TP frame — len=2 hex=1101
+[2026-05-26 12:35:43.007] [DBG] [ecu.isotp_server            ] [isotp_server.py:send:76] [SEND] ISO-TP frame — len=2 hex=5101
+[2026-05-26 12:35:43.512] [DBG] [ecu.isotp_server            ] [isotp_server.py:recv:62] [RECV] ISO-TP frame — len=2 hex=1003
+[2026-05-26 12:35:43.514] [DBG] [ecu.isotp_server            ] [isotp_server.py:send:76] [SEND] ISO-TP frame — len=6 hex=5003003201F4
+[2026-05-26 12:35:43.518] [DBG] [ecu.isotp_server            ] [isotp_server.py:recv:62] [RECV] ISO-TP frame — len=2 hex=2701
+[2026-05-26 12:35:43.522] [DBG] [ecu.isotp_server            ] [isotp_server.py:send:76] [SEND] ISO-TP frame — len=4 hex=6701BEEF
+[2026-05-26 12:35:43.527] [DBG] [ecu.isotp_server            ] [isotp_server.py:recv:62] [RECV] ISO-TP frame — len=2 hex=1101
+[2026-05-26 12:35:43.527] [DBG] [ecu.isotp_server            ] [isotp_server.py:send:76] [SEND] ISO-TP frame — len=2 hex=5101
+[2026-05-26 12:35:44.032] [DBG] [ecu.isotp_server            ] [isotp_server.py:recv:62] [RECV] ISO-TP frame — len=2 hex=1003
+[2026-05-26 12:35:44.032] [DBG] [ecu.isotp_server            ] [isotp_server.py:send:76] [SEND] ISO-TP frame — len=6 hex=5003003201F4
+[2026-05-26 12:35:44.037] [DBG] [ecu.isotp_server            ] [isotp_server.py:recv:62] [RECV] ISO-TP frame — len=2 hex=2701
+[2026-05-26 12:35:44.041] [DBG] [ecu.isotp_server            ] [isotp_server.py:send:76] [SEND] ISO-TP frame — len=4 hex=6701BEEF
+[2026-05-26 12:35:44.046] [DBG] [ecu.isotp_server            ] [isotp_server.py:recv:62] [RECV] ISO-TP frame — len=2 hex=1101
+[2026-05-26 12:35:44.047] [DBG] [ecu.isotp_server            ] [isotp_server.py:send:76] [SEND] ISO-TP frame — len=2 hex=5101
+[2026-05-26 12:35:44.551] [DBG] [ecu.isotp_server            ] [isotp_server.py:recv:62] [RECV] ISO-TP frame — len=2 hex=1003
+[2026-05-26 12:35:44.553] [DBG] [ecu.isotp_server            ] [isotp_server.py:send:76] [SEND] ISO-TP frame — len=6 hex=5003003201F4
+[2026-05-26 12:35:44.557] [DBG] [ecu.isotp_server            ] [isotp_server.py:recv:62] [RECV] ISO-TP frame — len=2 hex=2701
+[2026-05-26 12:35:44.558] [DBG] [ecu.isotp_server            ] [isotp_server.py:send:76] [SEND] ISO-TP frame — len=4 hex=6701BEEF
+[2026-05-26 12:35:44.562] [DBG] [ecu.isotp_server            ] [isotp_server.py:recv:62] [RECV] ISO-TP frame — len=2 hex=1101
+[2026-05-26 12:35:44.563] [DBG] [ecu.isotp_server            ] [isotp_server.py:send:76] [SEND] ISO-TP frame — len=2 hex=5101
+[2026-05-26 12:35:45.067] [DBG] [ecu.isotp_server            ] [isotp_server.py:recv:62] [RECV] ISO-TP frame — len=2 hex=1003
+[2026-05-26 12:35:45.071] [DBG] [ecu.isotp_server            ] [isotp_server.py:send:76] [SEND] ISO-TP frame — len=6 hex=5003003201F4
+[2026-05-26 12:35:45.076] [DBG] [ecu.isotp_server            ] [isotp_server.py:recv:62] [RECV] ISO-TP frame — len=2 hex=2701
+[2026-05-26 12:35:45.078] [DBG] [ecu.isotp_server            ] [isotp_server.py:send:76] [SEND] ISO-TP frame — len=4 hex=6701BEEF
+[2026-05-26 12:35:45.083] [DBG] [ecu.isotp_server            ] [isotp_server.py:recv:62] [RECV] ISO-TP frame — len=2 hex=1101
+[2026-05-26 12:35:45.085] [DBG] [ecu.isotp_server            ] [isotp_server.py:send:76] [SEND] ISO-TP frame — len=2 hex=5101

